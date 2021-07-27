@@ -1,6 +1,5 @@
 {
   "npmClient": "yarn",
-  "packages": ["packages/*"],
   "publishConfig": {
     "access": "public"
   },
