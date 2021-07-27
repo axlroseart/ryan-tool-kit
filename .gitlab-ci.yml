@@ -1,0 +1,112 @@
+stages:
+  - prepare
+  - build
+  - deploy
+  - publish
+  - release
+
+cache:
+  # 缓存文件以分支为key
+  key: ${CI_COMMIT_REF_NAME}
+  # 缓存需要的文件至runner
+  paths:
+    - node_modules/
+    - packages/
+    - .yarn
+
+# 安装所需依赖
+install:
+  stage: prepare
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v.*$/'
+      # 仅在这个文件有变动时进行依赖安装，减少pipeline时间
+      changes:
+        - yarn.lock
+  tags:
+    - frontend
+  script:
+    - npm config set '@${CI_PROJECT_ROOT_NAMESPACE}:registry=https://gitlab.codemao.cn/api/v4/packages/npm/'
+    - npm config set '//gitlab.codemao.cn/api/v4/packages/npm/:_authToken' ${CI_JOB_TOKEN}
+    - yarn config set workspaces-experimental true
+    - yarn install
+
+# 为接下来的stage作准备
+before:
+  stage: prepare
+  only:
+    refs:
+      - merge_requests
+  tags:
+    - frontend
+  script:
+    - |
+      if [[ ! -f package.json ]]; then
+        echo "No package.json found! A package.json file is required to publish a package to GitLab's NPM registry."
+        echo 'For more information, see https://docs.gitlab.com/ee/user/packages/npm_registry/#creating-a-project'
+        exit 1
+      fi
+    # 取包名
+    - NPM_PACKAGE_NAME=$(node -p "require('./package.json').name")
+    # 检查包名是否合规
+    - |
+      if [[ ! $NPM_PACKAGE_NAME =~ ^@$CI_PROJECT_ROOT_NAMESPACE/ ]]; then
+        echo "Invalid package scope! Packages must be scoped in the root namespace of the project, e.g. \"@${CI_PROJECT_ROOT_NAMESPACE}/${CI_PROJECT_NAME}\""
+        echo 'For more information, see https://docs.gitlab.com/ee/user/packages/npm_registry/#package-naming-convention'
+        exit 1
+      fi
+
+# 文件打包
+build:
+  stage: build
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v.*$/'
+  tags:
+    - frontend
+  script:
+    - npm run init
+    - npm run lint
+    - npm run compile
+
+# pages:
+#   stage: deploy #当前阶段为deploy
+#   rules:
+    # - if: '$CI_COMMIT_TAG =~ /^v.*$/'
+#   tags:
+#     - frontend
+#   script: 
+#     - npm run build-doc #deploy阶段运行的命令
+#   artifacts:
+#     paths:
+#       - doc_dist
+
+# 发布包至gitlab
+publish:
+  stage: publish
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v.*$/'
+  tags:
+    - frontend
+  script:
+    - npm config set '@${CI_PROJECT_ROOT_NAMESPACE}:registry=https://gitlab.codemao.cn/api/v4/projects/${CI_PROJECT_ID}/packages/npm/'
+    - npm config set '//gitlab.codemao.cn/api/v4/packages/npm/:_authToken' ${CI_JOB_TOKEN}
+    - npm config set '//gitlab.codemao.cn/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken' ${CI_JOB_TOKEN}
+    - git fetch --tags
+    - npm run pub
+
+# release
+release:
+  stage: release
+  needs:
+    - job: publish
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  tags:
+    - frontend
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v.*$/'
+  script:
+    - echo '------ running release_job for $TAG ------'
+  release:
+    name: 'Release $CI_COMMIT_TAG'
+    description: $CI_COMMIT_MESSAGE
+    tag_name: '$CI_COMMIT_TAG'
+    ref: '$CI_COMMIT_TAG'

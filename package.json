@@ -3,15 +3,20 @@
   "name": "dcc-tool-kit",
   "version": "0.0.1",
   "scripts": {
+    "init": "npm run svgo && node scripts/icon.js",
+    "postinstall": "npm run bootstrap",
     "start": "dumi dev",
-    "docs:build": "dumi build",
-    "docs:deploy": "gh-pages -d dist",
-    "build": "father-build",
-    "deploy": "npm run docs:build && npm run docs:deploy",
-    "release": "npm run build && npm publish",
-    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "build-doc": "dumi build",
+    "compile": "father-build",
+    "lint": "prettier packages/**/*.{ts,tsx} --check && stylelint packages/**/*.less",
+    "format": "prettier packages/**/*.{ts,tsx} --write && stylelint packages/**/*.less --fix",
+    "ci": "npm run init && npm run lint && npm run compile",
+    "test": "umi-test --coverage",
+    "bootstrap": "lerna bootstrap",
+    "version": "lerna version",
+    "pub": "lerna publish from-git --canary --yes --force-publish=*",
+    "svgo": "svgo -f ./packages/antd-mobile-icons/icons -o ./packages/antd-mobile-icons/icons/out --config=./.svgo.yml"
+
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
