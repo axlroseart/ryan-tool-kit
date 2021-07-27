@@ -77,7 +77,7 @@ pages:
     - npm run build-doc #deploy阶段运行的命令
   artifacts:
     paths:
-      - dist
+      - public
 
 # 发布包至gitlab
 publish:

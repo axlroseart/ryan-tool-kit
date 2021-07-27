@@ -7,6 +7,7 @@ export default defineConfig({
   favicon: 'https://luoguoxiong.github.io/builder/images/logo.png',
   logo: 'https://luoguoxiong.github.io/builder/images/logo.png',
   mode: 'site',
+  outputPath: './public',
   navs: [
     {
       title: '开发指南',
