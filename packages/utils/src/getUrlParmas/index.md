@@ -9,6 +9,5 @@ nav:
 
 ```ts
 import { getUrlParmas } from '@frontend/utils';
-
 getUrlParmas();
 ```
