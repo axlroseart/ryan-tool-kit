@@ -15,7 +15,6 @@
     "version": "lerna version",
     "pub": "lerna publish from-git --canary --yes --force-publish=*",
     "svgo": "svgo -f ./packages/antd-mobile-icons/icons -o ./packages/antd-mobile-icons/icons/out --config=./.svgo.yml"
-
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

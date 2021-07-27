@@ -10,7 +10,7 @@
     "declaration": true,
     "baseUrl": ".",
     "paths": {
-      "your-components": ["src/index.ts"]
+      "@dcc/system-components": ["src/index.ts"]
     }
   }
 }
