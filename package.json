@@ -3,7 +3,6 @@
   "name": "dcc-tool-kit",
   "version": "0.0.1",
   "scripts": {
-    "init": "npm run svgo && node scripts/icon.js",
     "postinstall": "npm run bootstrap",
     "start": "dumi dev",
     "build-doc": "dumi build",

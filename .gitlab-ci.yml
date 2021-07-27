@@ -63,8 +63,8 @@ build:
   tags:
     - frontend
   script:
-    - npm run init
-    - npm run lint
+    # - npm run init
+    # - npm run lint
     - npm run compile
 
 # pages:
