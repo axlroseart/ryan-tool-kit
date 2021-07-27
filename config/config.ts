@@ -3,9 +3,9 @@ import { defineConfig } from 'umi';
 export default defineConfig({
   publicPath: process.env.NODE_ENV === 'production' ? '/builder/' : '/',
   base: process.env.NODE_ENV === 'production' ? '/builder/' : '/',
-  title: 'Builder',
-  favicon: 'https://peroluo.github.io/builder/images/logo.png',
-  logo: 'https://peroluo.github.io/builder/images/logo.png',
+  title: 'DCC-TOOL-KIT',
+  favicon: 'https://luoguoxiong.github.io/builder/images/logo.png',
+  logo: 'https://luoguoxiong.github.io/builder/images/logo.png',
   mode: 'site',
   navs: [
     {
@@ -25,7 +25,7 @@ export default defineConfig({
       path: '/components',
     },
     {
-      title: 'GitHub',
+      title: 'GitLab',
       path: 'https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit',
     },
   ],

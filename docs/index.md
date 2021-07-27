@@ -1,9 +1,9 @@
 ---
-title: Builder
+title: DCC-TOOL-KIT
 order: 10
 hero:
-  title: Builder
-  desc: 基于dumi构建的企业级应用库
+  title: DCC-TOOL-KIT
+  desc: 点程云前端通用套件
   actions:
     - text: 开发指南
       link: ./guide
