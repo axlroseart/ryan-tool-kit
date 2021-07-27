@@ -26,7 +26,7 @@ export default defineConfig({
     },
     {
       title: 'GitHub',
-      path: 'https://github.com/Peroluo/builder',
+      path: 'https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit',
     },
   ],
 });

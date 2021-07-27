@@ -8,7 +8,7 @@ nav:
 ## add
 
 ```ts
-import { getUrlParmas } from 'your-utils';
+import { getUrlParmas } from '@dcc/utils';
 
 getUrlParmas();
 ```
