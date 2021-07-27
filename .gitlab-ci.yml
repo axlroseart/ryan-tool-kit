@@ -10,7 +10,9 @@ cache:
   key: ${CI_COMMIT_REF_NAME}
   # 缓存需要的文件至runner
   paths:
+    - node_modules/
     - packages/
+    - .yarn
 
 # 安装所需依赖
 install:
@@ -19,13 +21,14 @@ install:
     - if: '$CI_COMMIT_TAG =~ /^v.*$/'
       # 仅在这个文件有变动时进行依赖安装，减少pipeline时间
       changes:
-        - package-lock.json
+        - yarn.lock
   tags:
     - frontend
   script:
     - npm config set '@${CI_PROJECT_ROOT_NAMESPACE}:registry=https://gitlab.codemao.cn/api/v4/packages/npm/'
     - npm config set '//gitlab.codemao.cn/api/v4/packages/npm/:_authToken' ${CI_JOB_TOKEN}
-    - npm ci --unsafe-perm
+    - yarn config set workspaces-experimental true
+    - yarn install
 
 # 为接下来的stage作准备
 before:
@@ -60,8 +63,8 @@ build:
   tags:
     - frontend
   script:
-    # - npm run init
-    # - npm run lint
+    - npm run init
+    - npm run lint
     - npm run compile
 
 # pages:
@@ -74,7 +77,7 @@ build:
 #     - npm run build-doc #deploy阶段运行的命令
 #   artifacts:
 #     paths:
-#       - dist
+#       - doc_dist
 
 # 发布包至gitlab
 publish:
