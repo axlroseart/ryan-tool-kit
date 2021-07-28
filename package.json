@@ -8,7 +8,6 @@
     "build-doc": "dumi build",
     "compile": "father-build",
     "lint": "eslint packages/**/*.{ts,tsx} --fix && stylelint packages/**/*.less --fix",
-    "ci": "npm run init && npm run lint && npm run compile",
     "test": "umi-test --coverage",
     "bootstrap": "lerna bootstrap",
     "pub": "lerna publish from-package --yes"
