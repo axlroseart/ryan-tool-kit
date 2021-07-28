@@ -13,11 +13,12 @@ app.use(express.static(path.join(__dirname, '../public/'), {
     }
   },
 }));
+
 app.use((req, res) => {
   res.set('Cache-Control', 'no-cache');
   res.sendFile(path.join(__dirname, '../public/'));
 });
 
 app.listen(5000, () => {
-  console.log('The app server is working at: http://127.0.0.1:5000');
+  console.log('The app server is working at: http://localhost:5000');
 });
