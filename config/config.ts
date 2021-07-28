@@ -1,8 +1,8 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  publicPath: process.env.NODE_ENV === 'production' ? '/builder/' : '/',
-  base: process.env.NODE_ENV === 'production' ? '/builder/' : '/',
+  publicPath: './',
+  base: './',
   title: 'DCC-TOOL-KIT',
   favicon: 'https://luoguoxiong.github.io/builder/images/logo.png',
   logo: 'https://luoguoxiong.github.io/builder/images/logo.png',

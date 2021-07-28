@@ -5,7 +5,6 @@
 /npm-debug.log*
 /yarn-error.log
 /yarn.lock
-
 # production
 /dist
 /docs-dist
@@ -24,3 +23,6 @@ es/
 # ide
 /.vscode
 /.idea
+
+coverage
+public
