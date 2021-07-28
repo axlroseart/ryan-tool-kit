@@ -11,8 +11,6 @@ cache:
   # 缓存需要的文件至runner
   paths:
     - node_modules/
-    - packages/
-    - .yarn
 
 # 安装所需依赖
 install:
@@ -22,7 +20,7 @@ install:
       # 仅在这个文件有变动时进行依赖安装，减少pipeline时间
       changes:
         # - yarn.lock
-        - package-lock.jso
+        - package-lock.json
   tags:
     - frontend
   script:
@@ -91,7 +89,7 @@ publish:
     - npm config set '@${CI_PROJECT_ROOT_NAMESPACE}:registry=https://gitlab.codemao.cn/api/v4/projects/${CI_PROJECT_ID}/packages/npm/'
     - npm config set '//gitlab.codemao.cn/api/v4/packages/npm/:_authToken' ${CI_JOB_TOKEN}
     - npm config set '//gitlab.codemao.cn/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken' ${CI_JOB_TOKEN}
-    - git fetch --tags
+    # - git fetch --tags
     - npm run pub
 
 # release
