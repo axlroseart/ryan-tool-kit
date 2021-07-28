@@ -28,7 +28,7 @@
       "eslint --fix"
     ],
     "*.{css,less}": [
-      "stylelint"
+      "stylelint --fix"
     ]
   },
   "dependencies": {
