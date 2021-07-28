@@ -1,5 +1,5 @@
 # 基础镜像
-FROM registry.srv.codemao.cn:5000/codemao-master:8-onbuild
+FROM node:12
 
 
 # 指定当前用户(codemao用户没有写入权限)
