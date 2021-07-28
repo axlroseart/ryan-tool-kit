@@ -1,8 +1,6 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  publicPath: './',
-  base: './',
   title: 'DCC-TOOL-KIT',
   favicon: 'https://luoguoxiong.github.io/builder/images/logo.png',
   logo: 'https://luoguoxiong.github.io/builder/images/logo.png',

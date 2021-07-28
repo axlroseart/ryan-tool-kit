@@ -23,5 +23,5 @@ features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/7a26c287-d7d8-42d6-8a55-c9aa4c097149.webp
     title: React Components
     desc: 基于业务，实现可复用公共组件，提高开发效率
-footer: Builder <br /> Design by peroLuo<br /> Docs by [dumi](https://d.umijs.org)
+footer: DCC-TOOL-KIT <br /> Design by 点成云前端<br /> Docs by [dumi](https://d.umijs.org)
 ---
