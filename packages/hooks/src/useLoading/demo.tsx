@@ -6,7 +6,7 @@ export default () => {
   return (
     <button
       onClick={() => {
-        	setLoading(!isLoading);
+        setLoading(!isLoading);
       }}
     >
       按钮{isLoading ? 'loading' : ''}
