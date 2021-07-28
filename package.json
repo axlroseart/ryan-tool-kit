@@ -46,7 +46,6 @@
     "lerna": "^4.0.0",
     "lint-staged": "^10.0.7",
     "stylelint": "^8.0.0",
-    "eslint": "^7.28.0",
     "yorkie": "^2.0.0"
   },
   "__npminstall_done": false
