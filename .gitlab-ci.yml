@@ -16,6 +16,7 @@ cache:
 install:
   stage: install
   rules:
+    # - if: '$CI_COMMIT_TAG =~ /^v.*$/'
     - if: '$CI_COMMIT_BRANCH == "master"'
       # 仅在这个文件有变动时进行依赖安装，减少pipeline时间
       changes:
