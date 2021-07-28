@@ -1,5 +1,5 @@
 {
-  "name": "@frontend/system-components",
+  "name": "@frontend/dcc-system-components",
   "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",

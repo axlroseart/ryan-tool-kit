@@ -8,7 +8,7 @@ nav:
 ## add
 
 ```ts
-import { add } from '@frontend/utils';
+import { add } from '@frontend/dcc-utils';
 
 add(1, 2); // 3
 ```

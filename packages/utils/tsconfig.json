@@ -10,7 +10,7 @@
     "declaration": true,
     "baseUrl": ".",
     "paths": {
-      "@frontend/utils": ["src/index.ts"]
+      "@frontend/dcc-utils": ["src/index.ts"]
     }
   }
 }

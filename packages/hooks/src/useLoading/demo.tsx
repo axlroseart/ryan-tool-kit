@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useLoading } from '@frontend/hooks';
+import { useLoading } from '@frontend/dcc-hooks';
 
 export default () => {
   const { isLoading, setLoading } = useLoading();

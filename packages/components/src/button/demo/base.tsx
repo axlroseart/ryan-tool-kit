@@ -1,4 +1,4 @@
 import * as React from 'react';
-import { Button } from '@frontend/system-components';
+import { Button } from '@frontend/dcc-system-components';
 
 export default () => <Button>按钮</Button>;
