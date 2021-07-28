@@ -4,7 +4,7 @@ const useLoading = () => {
   const [isLoading, setLoading] = React.useState(false);
   return {
     isLoading,
-    		setLoading,
+    setLoading,
   };
 };
 export default useLoading;
