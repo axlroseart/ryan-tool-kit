@@ -1,10 +1,6 @@
 # 基础镜像
 FROM registry.srv.codemao.cn:5000/codemao-master:8-onbuild
 
-# 下载七牛上传工具qshell
-RUN mkdir /srv/qiniu && \
-  curl -o /srv/qiniu/qshell https://ops-files.codemao.cn/qshell && \
-  chmod -R +x /srv/qiniu
 
 # 指定当前用户(codemao用户没有写入权限)
 USER codemao
