@@ -21,14 +21,13 @@ install:
     - if: '$CI_COMMIT_TAG =~ /^v.*$/'
       # 仅在这个文件有变动时进行依赖安装，减少pipeline时间
       changes:
-        - yarn.lock
+        - package-lock.lock
   tags:
     - frontend
   script:
     - npm config set '@${CI_PROJECT_ROOT_NAMESPACE}:registry=https://gitlab.codemao.cn/api/v4/packages/npm/'
     - npm config set '//gitlab.codemao.cn/api/v4/packages/npm/:_authToken' ${CI_JOB_TOKEN}
-    - yarn config set workspaces-experimental true
-    - yarn install
+    - npm install
 
 # 为接下来的stage作准备
 before:
