@@ -1,8 +1,8 @@
 ---
-title: DCC-TOOL-KIT
+title: Dcc Tool Kit
 order: 10
 hero:
-  title: DCC-TOOL-KIT
+  title: Dcc Tool Kit
   desc: 点程云前端通用套件
   actions:
     - text: 开发指南

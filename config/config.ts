@@ -1,11 +1,21 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  title: 'DCC-TOOL-KIT',
-  favicon: 'https://luoguoxiong.github.io/builder/images/logo.png',
-  logo: 'https://luoguoxiong.github.io/builder/images/logo.png',
+  title: 'Dcc Tool Kit',
+  favicon: 'https://www.mlz-admin.com/assets/logo.360.png',
+  logo: 'https://www.mlz-admin.com/assets/logo.360.png',
   mode: 'site',
   outputPath: './public',
+  menus: {
+    '/utils': [{
+      title: '工具函数',
+      children: ['add'],
+    }],
+    '/hooks': [{
+      title: 'State',
+      children: ['useBoolean'],
+    }],
+  },
   navs: [
     {
       title: '开发指南',

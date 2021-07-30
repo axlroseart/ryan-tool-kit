@@ -1,8 +1,8 @@
 ---
-title: 关于 Dc Tool Kit
+title: 关于 Dcc Tool Kit
 ---
 
-# Dc Tool Kit
+# Dcc Tool Kit
 
 dcc-tool-kit 是点成云前端公共套件，主要用`@frontend/dcc-utils 工具库`、`@frontend/dcc-hooks hooks库`、`@frontend/dcc-system-components 业务组件库（PC）`三个模块组成，主要服务于新零售前端业务线。
 
