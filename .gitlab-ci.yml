@@ -8,8 +8,9 @@ stages:
 cache:
   # 缓存文件以分支为key
   key: ${CI_COMMIT_REF_NAME}
-  # 缓存需要的文件至runner,解决发包丢失问题
+  # 缓存需要的文件至runner
   paths:
+    - node_modules/
     - packages/
 
 # 安装所需依赖
