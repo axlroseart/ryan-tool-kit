@@ -48,7 +48,7 @@ pages:
     - npm run build-doc
   artifacts:
     paths:
-      - public
+      - dist
 
 # 发布包至gitlab
 publish:

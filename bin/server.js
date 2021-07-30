@@ -3,7 +3,7 @@ const ms = require('ms');
 const express = require('express');
 const app = express();
 
-app.use(express.static(path.join(__dirname, '../public/'), {
+app.use(express.static(path.join(__dirname, '../dist/'), {
   etag: true,
   lastModified: true,
   maxAge: ms('10 days'),

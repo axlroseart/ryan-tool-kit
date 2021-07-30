@@ -10,7 +10,9 @@
     "production": "node ./bin/server.js",
     "lint": "eslint packages/**/*.{ts,tsx} --fix && stylelint packages/**/*.less --fix",
     "test": "umi-test --coverage",
-    "test01": "umi-test ./packages/hooks/src/useBoolean/__tests__ ",
+    "test_hooks": "umi-test ./packages/hooks --coverage",
+    "test_utils": "umi-test ./packages/utils --coverage",
+    "test_components": "umi-test ./packages/components --coverage",
     "bootstrap": "lerna bootstrap",
     "pub": "lerna publish from-package --yes"
   },
@@ -25,8 +27,8 @@
     "packages/*"
   ],
   "lint-staged": {
-    "*.{js,jsx,less,ts,tsx}": [
-      "eslint --fix"
+    "*.{js,jsx,ts,tsx}": [
+      "eslint  --fix"
     ],
     "*.{css,less}": [
       "stylelint --fix"
@@ -36,25 +38,30 @@
     "react": "^16.12.0"
   },
   "devDependencies": {
-    "@tools-list/eslint-config-self": "0.0.3",
-    "@tools-list/stylelint-config-self": "0.0.2",
-    "@testing-library/react-hooks": "^2.0.1",
-    "react-test-renderer": "^16.13.1",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@testing-library/react-hooks": "^2.0.1",
+    "@tools-list/eslint-config-self": "0.0.3",
+    "@tools-list/stylelint-config-self": "0.0.2",
     "@types/enzyme": "^3.9.3",
     "@types/jest": "^24.0.15",
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
     "@umijs/test": "^3.0.5",
     "dumi": "^1.0.16",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
     "express": "^4.17.1",
     "father-build": "^1.17.2",
     "husky": "^7.0.1",
     "lerna": "^4.0.0",
     "lint-staged": "^10.0.7",
+    "mutationobserver-shim": "^0.3.5",
+    "react-test-renderer": "^16.13.1",
     "stylelint": "^8.0.0",
-    "yorkie": "^2.0.0"
+    "yorkie": "^2.0.0",
+    "umi-test": "^1.9.0"
   },
   "__npminstall_done": false
 }

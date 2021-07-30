@@ -1,16 +1,13 @@
 import * as React from 'react';
+import classnames from 'classnames';
+import { ButtonPropsType } from './PropsType';
 import './style';
 
-export interface IHelloProps {
-  /**
-   * @description       也可以显式加上描述名
-   * @default           支持定义默认值
-   */
-  className?:string; // 支持识别 TypeScript 可选类型为非必选属性
-}
-
-const Button:React.FC<IHelloProps> = ({ children }) => (
-  <button className="button">{children}</button>
+const Button:React.FC<ButtonPropsType> = ({ children, className, onPress }) => (
+  <button
+    className={classnames(className, 'button')}
+    onClick={onPress}>{children}
+  </button>
 );
 
 export default Button;

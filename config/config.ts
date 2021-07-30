@@ -2,10 +2,10 @@ import { defineConfig } from 'umi';
 
 export default defineConfig({
   title: 'Dcc Tool Kit',
-  favicon: 'https://www.mlz-admin.com/assets/logo.360.png',
-  logo: 'https://www.mlz-admin.com/assets/logo.360.png',
+  favicon: '/images/logo.png',
+  logo: '/images/logo.png',
   mode: 'site',
-  outputPath: './public',
+  outputPath: './dist',
   menus: {
     '/utils': [{
       title: '工具函数',
@@ -14,6 +14,10 @@ export default defineConfig({
     '/hooks': [{
       title: 'State',
       children: ['useBoolean'],
+    }],
+    '/components': [{
+      title: '基础组件',
+      children: ['button'],
     }],
   },
   navs: [
