@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, '../dist/'), {
 
 app.use((req, res) => {
   res.set('Cache-Control', 'no-cache');
-  res.sendFile(path.join(__dirname, '../public/'));
+  res.sendFile(path.join(__dirname, '../dist/'));
 });
 
 app.listen(5000, () => {
