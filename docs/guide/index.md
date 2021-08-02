@@ -74,14 +74,24 @@ export default () => {
             },
        }
     ```
-#### 4. 组件库基于less开发，需要配置less-loader
+#### 4. 组件库基于less开发，需要配置less-loader，多主题配置
+
+* less 版本："^3.9.0", less-loader 版本 "^4.1.0" 
+
 ```json
 {
     "test": /\.less$/,
     "use": [
         "style-loader",
         "css-loader",
-        { "loader": "less-loader" },
+        { 
+            "loader": "less-loader",
+            "options": {
+                "modifyVars": {
+                "bg-color": "#1DA57A",
+                },
+            } 
+        },
     ],
     "include": /node_modules\/@frontend\/dcc-system-components/,
 },
