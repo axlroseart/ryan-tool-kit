@@ -22,7 +22,7 @@ export default defineConfig({
   },
   navs: [
     {
-      title: '开发指南',
+      title: '快速上手',
       path: '/guide',
     },
     {

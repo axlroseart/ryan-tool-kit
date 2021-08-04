@@ -1,5 +1,6 @@
 ---
-title: 关于 Dcc Tool Kit
+title: 快速上手
+order: 1
 ---
 
 # Dcc Tool Kit
