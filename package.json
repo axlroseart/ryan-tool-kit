@@ -11,7 +11,7 @@
     "lint": "eslint packages/**/*.{ts,tsx} --fix && stylelint packages/**/*.less --fix",
     "test": "umi-test --coverage",
     "test_hooks": "umi-test ./packages/hooks --coverage",
-    "test_utils": "umi-test ./packages/utils --coverage",
+    "test_utils": "umi-test ./packages/utils --coverage ",
     "test_components": "umi-test ./packages/components --coverage",
     "bootstrap": "lerna bootstrap",
     "pub": "lerna publish from-package --yes"
