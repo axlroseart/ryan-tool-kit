@@ -1,28 +1,31 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import useBoolean from '../index';
+import { useEffect } from 'react';
+import useCount from '../index';
 
-const setUp = (defaultValue?:boolean) => renderHook(() => useBoolean(defaultValue));
+const setUp = () => renderHook(() => useCount());
 
-describe('useBoolean', () => {
-  it('should be defined', () => {
-    expect(useBoolean).toBeDefined();
-  });
+describe('useCount', () => {
 
-  it('test on methods', async() => {
+  it('test useCount init', async() => {
     const { result } = setUp();
-    expect(result.current[0]).toBeFalsy();
-    act(() => {
-      result.current[1].setTrue();
-    });
-    expect(result.current[0]).toBeTruthy();
-    act(() => {
-      result.current[1].setFalse();
-    });
-    expect(result.current[0]).toBeFalsy();
+    expect(result.current.current).toBe(0);
+    expect(result.current.status).toBe(false);
   });
 
-  it('test on optional', () => {
-    const hook = setUp(true);
-    expect(hook.result.current[0]).toBeTruthy();
+  it('test useCount startCount', async() => {
+    const { result, waitForNextUpdate, unmount } = setUp();
+    act(() => {
+      result.current.startCounter({
+        begin: 6,
+        end: 0,
+        interval: 1000,
+      });
+    });
+    expect(result.current.current).toEqual(6);
+    for(let i = 0;i < 7;i++){
+      await waitForNextUpdate();
+    }
+    expect(result.current.current).toEqual(0);
+    unmount();
   });
 });
