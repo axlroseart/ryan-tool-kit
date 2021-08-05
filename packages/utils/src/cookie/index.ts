@@ -133,14 +133,14 @@ class DccCookie {
    * 获取普通cookie
    * @param key
    */
-  getCookie = (key) => this.parseCookie()[key] || ''
+  getCookie = (key:COOKIE_COMMON_KEY) => this.parseCookie()[key] || ''
   /**
    * 获取需转化cookie
    * @param key
    * @returns
    */
   getTransCookie = (key:COOKIE_TRANS_KEY) => {
-    const cookieVal = this.getCookie(key);
+    const cookieVal = this.parseCookie()[key] || '';
     return cookieVal ? JSON.parse(cookieVal) : '';
   }
 
