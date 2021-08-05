@@ -14,6 +14,10 @@ export default defineConfig({
     '/hooks': [{
       title: 'State',
       children: ['useBoolean'],
+    },
+    {
+      title: 'Action',
+      children: ['useCount'],
     }],
     '/components': [{
       title: '基础组件',
