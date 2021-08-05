@@ -10,6 +10,10 @@ export default defineConfig({
     '/utils': [{
       title: '工具函数',
       children: ['add'],
+    },
+    {
+      title: '数据存储',
+      children: ['cookie', 'cookie/key'],
     }],
     '/hooks': [{
       title: 'State',
