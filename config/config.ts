@@ -6,6 +6,7 @@ export default defineConfig({
   logo: '/images/logo.png',
   mode: 'site',
   outputPath: './dist',
+  hash: true,
   menus: {
     '/utils': [{
       title: '工具函数',
