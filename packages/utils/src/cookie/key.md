@@ -26,7 +26,7 @@ import { COOKIE_COMMON_KEY } from '@frontend/dcc-utils';
 
 // COOKIE_COMMON_KEY.AUTHORIZATION
 export enum COOKIE_COMMON_KEY {
-  AUTHORIZATION = 'authorization', // 登录token
+  AUTHORIZATION = 'cnr_token', // 登录token
   IS_SAAS = 'isSaas', //  标示当前用户所属机构类型
 }
 ```

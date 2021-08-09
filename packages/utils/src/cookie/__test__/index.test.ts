@@ -57,7 +57,7 @@ describe('dccCookie test', () => {
   });
   it('cookie key ', () => {
     expect(COOKIE_TRANS_KEY.USER_INFO).toBe('userInfo');
-    expect(COOKIE_COMMON_KEY.AUTHORIZATION).toBe('authorization');
+    expect(COOKIE_COMMON_KEY.AUTHORIZATION).toBe('cnr_token');
     expect(COOKIE_COMMON_KEY.IS_SAAS).toBe('isSaas');
   });
 });
