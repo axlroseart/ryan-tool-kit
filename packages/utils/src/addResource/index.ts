@@ -37,15 +37,19 @@ const addResource = (() => {
     resourceUrl:string;
     resourceType:'css'|'js';
   }) => {
-    if (!isLoadResource.has(resourceUrl)) {
-      isLoadResource.add(resourceUrl);
-      switch(resourceType){
-        case 'css': return await loadCss(resourceUrl);
-        case 'js':return await loadJs(resourceUrl);
-        default: return Promise.resolve(false);
+    try {
+      if (!isLoadResource.has(resourceUrl)) {
+        isLoadResource.add(resourceUrl);
+        switch(resourceType){
+          case 'css': return await loadCss(resourceUrl);
+          case 'js':return await loadJs(resourceUrl);
+          default: return Promise.resolve(false);
+        }
+      }else{
+        return Promise.resolve(true);
       }
-    }else{
-      return Promise.resolve(true);
+    } catch (error) {
+      return Promise.resolve(false);
     }
   };
 })();
