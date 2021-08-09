@@ -1,6 +1,5 @@
 {
   "npmClient": "npm",
-  "useWorkspaces": true,
   "command": {
     "publish": {
       "registry": "https://gitlab.codemao.cn/api/v4/projects/972/packages/npm/:_authToken=X4QfM9v31Bz-BzmM4x5v",
@@ -8,5 +7,8 @@
       "message": "chore(release): publish"
     }
   },
-  "version": "independent"
+  "version": "independent",
+  "packages": [
+    "packages/*"
+  ]
 }
