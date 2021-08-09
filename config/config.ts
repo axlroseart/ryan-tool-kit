@@ -27,6 +27,10 @@ export default defineConfig({
     '/components': [{
       title: '基础组件',
       children: ['button'],
+    },
+    {
+      title: '业务组件',
+      children: ['video'],
     }],
   },
   navs: [

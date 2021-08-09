@@ -1,6 +1,6 @@
 {
   "name": "@frontend/dcc-system-components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -9,6 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@frontend/dcc-utils": "0.0.6",
     "classnames": "^2.2.6"
   },
   "peerDependencies": {
