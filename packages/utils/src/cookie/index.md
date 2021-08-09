@@ -35,16 +35,7 @@ import { COOKIE_COMMON_KEY, dccCookie } from '@frontend/dcc-utils';
 dccCookie.getCookie(COOKIE_COMMON_KEY.IS_SAAS)
 ```
 
-### 4.getCookie
-获取值为字符串数据的cookie
-```ts
-import { COOKIE_COMMON_KEY, dccCookie } from '@frontend/dcc-utils';
-
-dccCookie.getCookie(COOKIE_COMMON_KEY.IS_SAAS)
-```
-
-
-### 5.getTransCookie
+### 4.getTransCookie
 获取值为对象或者数字的cookie
 ```ts
 import { COOKIE_COMMON_KEY, dccCookie } from '@frontend/dcc-utils';
