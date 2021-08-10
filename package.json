@@ -3,7 +3,7 @@
   "name": "dcc-tool-kit",
   "version": "0.0.2",
   "scripts": {
-    "install": "npm run bootstrap",
+    "postinstall": "npm run bootstrap",
     "start": "dumi dev",
     "build-doc": "dumi build",
     "compile": "father-build",
