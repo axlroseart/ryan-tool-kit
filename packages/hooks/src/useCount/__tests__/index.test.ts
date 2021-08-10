@@ -1,5 +1,4 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import { useEffect } from 'react';
 import useCount from '../index';
 
 const setUp = () => renderHook(() => useCount());
