@@ -53,12 +53,14 @@ const Video:React.FC<VideoPropsType> = (props) => {
       }
     }
   };
+
   React.useEffect(() => {
     init();
     return () => {
       player.current.dispose();
     };
   }, [props]);
+
   return <div id={videoId.current} />;
 };
 export default Video;
