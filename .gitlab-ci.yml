@@ -12,9 +12,6 @@ cache:
   # 缓存需要的文件至runner
   paths:
     - node_modules/
-    - packages/components/node_modules/
-    - packages/hooks/node_modules/
-    - packages/utils/node_modules/
     - packages/
 
 # 安装所需依赖
