@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { addResource } from '@frontend/dcc-utils';
+import { loadResource } from '@frontend/dcc-utils';
 import { VideoPropsType } from './PropsType';
 declare const Aliplayer:any;
 
@@ -11,11 +11,11 @@ const Video:React.FC<VideoPropsType> = (props) => {
   const player = React.useRef<any>(null);
 
   const init = async() => {
-    const loadPlayJs = addResource({
+    const loadPlayJs = loadResource({
       resourceUrl: 'https://g.alicdn.com/de/prismplayer/2.9.8/aliplayer-min.js',
       resourceType: 'js',
     });
-    const loadPlayerCss = addResource({
+    const loadPlayerCss = loadResource({
       resourceUrl: 'https://g.alicdn.com/de/prismplayer/2.9.8/skins/default/aliplayer-min.css',
       resourceType: 'css',
     });

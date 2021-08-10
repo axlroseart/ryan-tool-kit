@@ -1,10 +1,10 @@
 ---
-title: addResource
+title: loadResource
 nav:
   path: /utils
 ---
 
-# addResource
+# loadResource
 
 加载css、js静态资源
 ## 代码演示
@@ -12,9 +12,9 @@ nav:
 ### 加载js资源
 
 ```ts
-import { addResource } from '@frontend/dcc-utils';
+import { loadResource } from '@frontend/dcc-utils';
 
-const isSuccess = await addResource({
+const isSuccess = await loadResource({
     resourceUrl: 'xxx.js',
     resourceType: 'js'
 });
@@ -23,9 +23,9 @@ const isSuccess = await addResource({
 ### 加载css资源
 
 ```ts
-import { addResource } from '@frontend/dcc-utils';
+import { loadResource } from '@frontend/dcc-utils';
 
-const isSuccess = await addResource({
+const isSuccess = await loadResource({
     resourceUrl: 'xxx.css',
     resourceType: 'css'
 });
@@ -33,7 +33,7 @@ const isSuccess = await addResource({
 ## API
 
 ```typescript
-const addResource: ({ resourceUrl, resourceType, }: {
+const loadResource: ({ resourceUrl, resourceType, }: {
     resourceUrl: string;
     resourceType: 'css' | 'js';
 }) => Promise<boolean>

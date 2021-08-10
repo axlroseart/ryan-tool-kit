@@ -1,4 +1,4 @@
-const addResource = (() => {
+const loadResource = (() => {
   const head = document.getElementsByTagName('html')[0];
 
   const isLoadResource = new Set<string>();
@@ -54,4 +54,4 @@ const addResource = (() => {
   };
 })();
 
-export default addResource;
+export default loadResource;

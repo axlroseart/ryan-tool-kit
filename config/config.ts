@@ -10,7 +10,7 @@ export default defineConfig({
   menus: {
     '/utils': [{
       title: '工具函数',
-      children: ['add', 'addResource'],
+      children: ['add', 'loadResource'],
     },
     {
       title: '数据存储',

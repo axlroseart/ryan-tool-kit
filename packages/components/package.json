@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@frontend/dcc-utils": "0.0.6",
+    "@frontend/dcc-utils": "0.0.7",
     "classnames": "^2.2.6"
   },
   "peerDependencies": {
