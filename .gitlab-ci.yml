@@ -6,6 +6,7 @@ stages:
   - release
 
 cache:
+  untracked: true
   # 缓存文件以分支为key
   key: ${CI_COMMIT_REF_NAME}
   # 缓存需要的文件至runner
