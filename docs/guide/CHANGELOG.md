@@ -1,3 +1,27 @@
+## [1.2.1](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.2.0...v1.2.1) (2021-08-11)
+
+
+### Features
+
+* commit ([1aac9a4](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/1aac9a49bfd46ab5ad528850599fa299ed8b43e5))
+* other ([b0009f6](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/b0009f6b2f29e58b334f17bba4ea517d44d6d7cc))
+* other ([e39838e](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/e39838e63754f5bc525108943b7bcb67717046f3))
+* test ([2598720](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/2598720df20611e3494700054fe9a6b7527a23ef))
+
+
+
+## [1.1.5](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.2.0...v1.1.5) (2021-08-11)
+
+
+### Features
+
+* commit ([1aac9a4](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/1aac9a49bfd46ab5ad528850599fa299ed8b43e5))
+* other ([b0009f6](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/b0009f6b2f29e58b334f17bba4ea517d44d6d7cc))
+* other ([e39838e](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/e39838e63754f5bc525108943b7bcb67717046f3))
+* test ([2598720](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/2598720df20611e3494700054fe9a6b7527a23ef))
+
+
+
 ## [1.1.4](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.2.0...v1.1.4) (2021-08-11)
 
 
