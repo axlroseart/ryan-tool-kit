@@ -1,3 +1,13 @@
+## [1.2.3](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.2.2...v1.2.3) (2021-08-11)
+
+
+### Features
+
+* 1.2.3 ([abf7762](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/abf776287563bd0cda14324bb8bb38b961f88972))
+* delete js ([7f6d0f4](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/7f6d0f461597358ba077711119349724ab30b097))
+
+
+
 ## [1.2.2](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.2.0...v1.2.2) (2021-08-11)
 
 
