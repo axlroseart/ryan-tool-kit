@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.1.2...v1.2.0) (2021-08-11)
+
+
+### Features
+
+* 添加 npmignore _test_ ([36aeff7](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/36aeff7e89b95adef3e104a5c55a51211ddb7bdc))
+
 ### [1.1.2](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.2.0...v1.1.2) (2021-08-11)
 
 ## [1.2.0](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.1.0...v1.2.0) (2021-08-11)
