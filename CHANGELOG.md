@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.0.3...v1.1.0) (2021-08-11)
+
+
+### Features
+
+* 添加版本更新日志 ([225db37](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/225db378465747f34194155badfa2ea9cc4abbfe))
+
 ### [1.0.3](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.0.2...v1.0.3) (2021-08-11)
 
 ### [1.0.2](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.1.2...v1.0.2) (2021-08-11)
