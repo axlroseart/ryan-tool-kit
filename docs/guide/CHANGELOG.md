@@ -1,3 +1,32 @@
+## [1.0.1](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.0.3...v1.0.1) (2021-08-11)
+
+
+### Features
+
+* 添加版本更新日志 ([225db37](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/225db378465747f34194155badfa2ea9cc4abbfe))
+* 添加日志 ([8c19956](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/8c19956716210a272c3042b95b9ffdc2188490ca))
+
+
+
+## [1.0.3](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.0.2...v1.0.3) (2021-08-11)
+
+
+
+## [1.0.2](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.1.2...v1.0.2) (2021-08-11)
+
+
+
+## [1.1.2](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.1.1...v1.1.2) (2021-08-11)
+
+
+
+## [1.1.1](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.1.0...v1.1.1) (2021-08-11)
+
+
+
+# [1.1.0](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.0.1...v1.1.0) (2021-08-11)
+
+
 ### Features
 
 * test ([d5a3905](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/d5a3905d9d282a9501fe24ce4402ee08bd4972e3))
