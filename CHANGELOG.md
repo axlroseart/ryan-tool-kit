@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.2.2...v1.3.0) (2021-08-11)
+
+
+### Features
+
+* 1.2.3 ([e61a07b](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/e61a07b5a5dc93766f8bcfaa01d16bda83c9001f))
+* 1.2.3 ([abf7762](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/abf776287563bd0cda14324bb8bb38b961f88972))
+* 1.2.4 ([cd66d30](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/cd66d3077a38a0be481e65e1556220082ac85353))
+* 1.2.4 ([0fc11b8](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/0fc11b84344bb47b28da69090d88f59271fff104))
+* 1.2.4 ([88a0f5b](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/88a0f5bb029b85056a4c9ee750b090ccdf166214))
+* delete js ([7f6d0f4](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/7f6d0f461597358ba077711119349724ab30b097))
+* other ([18b311f](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/18b311fac25bbf00828eda34a1767e858fe38183))
+* test ([27868b4](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/commit/27868b40d0bc392f80612da884771d9f2f868d82))
+
 ## [1.2.0](https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit/compare/v1.1.2...v1.2.0) (2021-08-11)
 
 
