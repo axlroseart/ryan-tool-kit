@@ -23,6 +23,7 @@
   "typings": "dist/index.d.ts",
   "gitHooks": {
     "pre-commit": "lint-staged",
+    "post-commit":"changelog && release",
     "commit-msg": "commitlint -eGIT_PARAMS $"
   },
   "workspaces": [
