@@ -14,7 +14,7 @@
     "test_utils": "umi-test ./packages/utils --coverage ",
     "test_components": "umi-test ./packages/components --coverage",
     "bootstrap": "lerna bootstrap --hoist",
-    "version": "standard-version && release",
+    "version": "standard-version",
     "release": "conventional-changelog -p angular -i ./docs/guide/CHANGELOG.md -s -n ./changelog-option.js",
     "pub": "lerna publish from-package --yes"
   },
