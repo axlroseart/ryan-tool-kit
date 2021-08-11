@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "dcc-tool-kit",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "scripts": {
     "postinstall": "npm run bootstrap",
     "start": "dumi dev",
@@ -14,8 +14,7 @@
     "test_utils": "umi-test ./packages/utils --coverage ",
     "test_components": "umi-test ./packages/components --coverage",
     "bootstrap": "lerna bootstrap --hoist",
-    "release": "standard-version",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "release": "standard-version && conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "pub": "lerna publish from-package --yes"
   },
   "main": "dist/index.js",
