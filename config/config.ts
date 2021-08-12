@@ -18,12 +18,13 @@ export default defineConfig({
     }],
     '/hooks': [{
       title: 'State',
-      children: ['useBoolean'],
+      children: ['useBoolean', 'useLocalStroage'],
     },
     {
       title: 'Action',
       children: ['useCount'],
-    }],
+    },
+    ],
     '/components': [{
       title: '基础组件',
       children: ['button'],

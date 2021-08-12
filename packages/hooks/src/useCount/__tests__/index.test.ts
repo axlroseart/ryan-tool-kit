@@ -15,13 +15,13 @@ describe('useCount', () => {
     const { result, waitForNextUpdate, unmount } = setUp();
     act(() => {
       result.current.startCounter({
-        begin: 6,
+        begin: 2,
         end: 0,
         interval: 1000,
       });
     });
-    expect(result.current.current).toEqual(6);
-    for(let i = 0;i < 7;i++){
+    expect(result.current.current).toEqual(2);
+    for(let i = 0;i < 3;i++){
       await waitForNextUpdate();
     }
     expect(result.current.current).toEqual(0);

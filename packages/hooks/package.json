@@ -1,6 +1,6 @@
 {
   "name": "@frontend/dcc-hooks",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -13,5 +13,8 @@
     "react-dom": "^16.8.0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/react": "^12.0.0"
+  }
 }
