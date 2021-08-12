@@ -8,13 +8,6 @@ interface TestLocalStroageValue {
 export default () => {
   const { value, setValue, remove } = useLocalStroage<TestLocalStroageValue>('test');
 
-  React.useEffect(() => {
-    setTimeout(() => {
-      localStorage.setItem('test', JSON.stringify({
-        hello: 'setTimeout',
-      }));
-    }, 1000);
-  }, []);
   return (
     <div>
       <button
