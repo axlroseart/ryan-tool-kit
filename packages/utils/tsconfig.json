@@ -12,5 +12,8 @@
     "paths": {
       "@frontend/dcc-utils": ["src/index.ts"]
     }
-  }
+  },
+  "files": [
+    "../../typings.d.ts"
+  ],
 }
