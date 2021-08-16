@@ -29,7 +29,7 @@ export class DccRedirect {
       return;
     }
     // 访问环境前缀
-    this._prefix = env || window.CODEMAOCONFIG?.env;
+    this._prefix = env || (window as any).CODEMAOCONFIG?.env;
     // 不同运行环境的前缀
     this._prefixArray = [
       'dev',
