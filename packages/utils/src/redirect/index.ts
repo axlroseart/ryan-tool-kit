@@ -3,7 +3,7 @@
  * 暂时没对非常规domain做处理
  */
 import { dccCookie, COOKIE_COMMON_KEY } from '../cookie';
-export class MyRedirect {
+export class DccRedirect {
   _mainDomain:string;
   _specificKey:string[];
   _prefix:string;
@@ -149,12 +149,8 @@ export class MyRedirect {
    */
   public init() {
     const targetValue = this._getAllianceType();
-    console.log('==> 当前访问域名对应的code：', targetValue);
     const cookieSaasStatus = dccCookie.getCookie(COOKIE_COMMON_KEY['isSaas']);
-    console.log('==> 当前cookie中存储的code：', cookieSaasStatus);
     if (!cookieSaasStatus || cookieSaasStatus !== targetValue) {
-      // 产品反馈暂时不需要提示，直接跳转到对应系统的登录页
-      // alert('即将返回登录页');
       this.doLogin();
       return;
     }
@@ -202,5 +198,3 @@ export class MyRedirect {
     this._doRedirect(currentTargetUrl, router);
   }
 }
-// export const DccRedirect = new MyRedirect();
-export const DccRedirect = MyRedirect;

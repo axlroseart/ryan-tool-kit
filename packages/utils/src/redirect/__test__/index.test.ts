@@ -1,9 +1,8 @@
 /**
  * @jest-environment jsdom
  */
-// import { dccCookie, COOKIE_COMMON_KEY } from '../../cookie';
 import { DccRedirect } from '../index';
-import { loginUrlMapPro, loginUrlMapTest, doLoginTestMap } from '../../constants/redirect';
+import { loginUrlMapPro, loginUrlMapTest } from '../../constants/redirect';
 
 describe('dcc redirect class test', () => {
   beforeAll(() => {
@@ -62,7 +61,6 @@ describe('dcc redirect class test', () => {
       expect(expectUrl).toEqual(gotoUrl);
     });
   }
-  // const code = dccCookie.getCookie(COOKIE_COMMON_KEY['isSaas']);
   // TODO - 利用工厂函数生成测试方法
   // ---------------- dologin test ----------------
   // 谷雨
