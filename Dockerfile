@@ -16,7 +16,7 @@ COPY /public/.npmrc /usr/src/app
 # gitlab npm仓库token
 ARG CI_JOB_TOKEN=''
 
-RUN npm install
+RUN npm i
 
 # 复制代码
 COPY . /usr/src/app/
