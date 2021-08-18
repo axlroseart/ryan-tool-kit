@@ -1,6 +1,6 @@
 {
   "name": "@frontend/dcc-utils",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -9,5 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21.1"
+  }
 }

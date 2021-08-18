@@ -15,6 +15,10 @@ export default defineConfig({
     {
       title: '数据存储',
       children: ['cookie', 'cookie/key'],
+    },
+    {
+      title: '资源上传',
+      children: ['aliUpload'],
     }],
     '/hooks': [{
       title: 'State',
