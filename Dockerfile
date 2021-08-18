@@ -18,6 +18,8 @@ ARG CI_JOB_TOKEN=''
 
 RUN npm i
 
+RUN npm run bootstrap
+
 # 复制代码
 COPY . /usr/src/app/
 
