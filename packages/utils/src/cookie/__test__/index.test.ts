@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 import { COOKIE_COMMON_KEY, dccCookie, COOKIE_TRANS_KEY } from '../index';
 
 
