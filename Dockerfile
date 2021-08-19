@@ -16,8 +16,6 @@ COPY /public/.npmrc /usr/src/app
 # gitlab npm仓库token
 ARG CI_JOB_TOKEN=''
 
-ENV NODE_ENV=production
-
 RUN npm install
 # RUN npm run bootstrap
 
