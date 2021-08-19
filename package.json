@@ -13,7 +13,7 @@
     "test_hooks": "umi-test ./packages/hooks --coverage",
     "test_utils": "umi-test ./packages/utils --coverage",
     "test_components": "umi-test ./packages/components --coverage",
-    "bootstrap": "lerna bootstrap --hoist --ci",
+    "bootstrap": "lerna bootstrap --hoist",
     "pub": "lerna publish from-package --yes"
   },
   "main": "dist/index.js",
