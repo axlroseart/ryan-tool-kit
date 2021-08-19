@@ -3,7 +3,7 @@ FROM node:11
 
 ENV NODE_ENV=production
 # 指定当前用户(codemao用户没有写入权限)
-# USER codemao
+USER codemao
 
 # Workdir is unprivileged user home
 WORKDIR /usr/src/app
