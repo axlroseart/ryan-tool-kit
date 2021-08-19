@@ -18,7 +18,7 @@ ARG CI_JOB_TOKEN=''
 
 ENV NODE_ENV=production
 
-RUN npm i
+RUN npm install
 # RUN npm run bootstrap
 
 # 复制代码
