@@ -18,10 +18,9 @@ COPY . /usr/src/app/
 ARG CI_JOB_TOKEN=''
 
 RUN npm i
-RUN npm run bootstrap
 
 # 复制代码
-COPY . /usr/src/app/
+# COPY . /usr/src/app/
 
 # 声明环境变量
 ARG QN_AKEY=''
