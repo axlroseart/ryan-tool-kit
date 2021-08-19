@@ -16,7 +16,7 @@ COPY /public/.npmrc /usr/src/app
 # gitlab npm仓库token
 ARG CI_JOB_TOKEN=''
 
-RUN npm i
+RUN npm run prepare
 
 # RUN npm run bootstrap
 
