@@ -3,6 +3,7 @@
   "name": "dcc-tool-kit",
   "version": "1.1.6",
   "scripts": {
+    "postinstall": "npm run bootstrap",
     "start": "dumi dev",
     "build-doc": "dumi build",
     "compile": "father-build",
@@ -62,7 +63,7 @@
     "react-test-renderer": "^16.13.1",
     "stylelint": "^9.2.1",
     "umi-test": "^1.9.0",
-    "yorkie": "^2.0.0"
-  },
-  "__npminstall_done": false
+    "yorkie": "^2.0.0",
+    "axios": "^0.21.1"
+  }
 }
