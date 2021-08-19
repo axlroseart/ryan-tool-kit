@@ -36,4 +36,4 @@ EXPOSE 5000
 
 # 起服务
 ENTRYPOINT ["npm", "run"]
-# CMD ["production"]
+CMD ["production"]
