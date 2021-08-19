@@ -63,7 +63,6 @@
     "react-test-renderer": "^16.13.1",
     "stylelint": "^9.2.1",
     "umi-test": "^1.9.0",
-    "yorkie": "^2.0.0",
-    "axios": "^0.21.1"
+    "yorkie": "^2.0.0"
   }
 }
