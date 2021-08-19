@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 
 # 安装依赖
 COPY package.json /usr/src/app
-COPY lerna.json /usr/src/app
+# COPY lerna.json /usr/src/app
 COPY package-lock.json /usr/src/app
 COPY /public/.npmrc /usr/src/app
 
@@ -17,7 +17,7 @@ COPY /public/.npmrc /usr/src/app
 ARG CI_JOB_TOKEN=''
 
 RUN npm i
-RUN npm run bootstrap
+RUN lerna bootstrap --hoist
 
 # 复制代码
 COPY . /usr/src/app/
