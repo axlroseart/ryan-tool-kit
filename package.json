@@ -13,7 +13,7 @@
     "test_hooks": "umi-test ./packages/hooks --coverage",
     "test_utils": "umi-test ./packages/utils --coverage",
     "test_components": "umi-test ./packages/components --coverage",
-    "bootstrap": "lerna bootstrap --hoist",
+    "bootstrap": "lerna bootstrap --hoist -no-ci",
     "pub": "lerna publish from-package --yes"
   },
   "main": "dist/index.js",
@@ -21,7 +21,7 @@
   "typings": "dist/index.d.ts",
   "gitHooks": {
     "pre-commit": "lint-staged",
-    "commit-msg": "commitlint -eGIT_PARAMS $"
+    "commit-msg": "commitlint -eGIT_classnamesPARAMS $"
   },
   "workspaces": [
     "packages/*"
