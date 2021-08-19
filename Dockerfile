@@ -11,7 +11,8 @@ WORKDIR /usr/src/app
 # COPY package.json /usr/src/app
 # COPY lerna.json /usr/src/app
 # COPY package-lock.json /usr/src/app
-# COPY /public/.npmrc /usr/src/app
+COPY /public/.npmrc /usr/src/app
+COPY . /usr/src/app/
 
 # gitlab npm仓库token
 ARG CI_JOB_TOKEN=''
