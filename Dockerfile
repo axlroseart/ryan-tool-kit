@@ -1,5 +1,5 @@
 # 基础镜像
-FROM node:12
+FROM node:11
 
 
 # 指定当前用户(codemao用户没有写入权限)
@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 
 # 安装依赖
 COPY package.json /usr/src/app
-# COPY package-lock.json /usr/src/app
+COPY package-lock.json /usr/src/app
 COPY /public/.npmrc /usr/src/app
 
 # gitlab npm仓库token
