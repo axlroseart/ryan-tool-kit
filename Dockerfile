@@ -9,14 +9,13 @@ WORKDIR /usr/src/app
 
 # 安装依赖
 COPY package.json /usr/src/app
-COPY package-lock.json /usr/src/app
-# COPY lerna.json /usr/src/app
+# COPY package-lock.json /usr/src/app
 COPY /public/.npmrc /usr/src/app
 
 # gitlab npm仓库token
 ARG CI_JOB_TOKEN=''
 
-RUN npm install
+RUN npm i
 # RUN npm run bootstrap
 
 # 复制代码
