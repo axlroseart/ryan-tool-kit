@@ -22,8 +22,8 @@ RUN npm install
 COPY . /usr/src/app/
 
 # 声明环境变量
-ARG QN_AKEY=''
-ARG QN_SKEY=''
+# ARG QN_AKEY=''
+# ARG QN_SKEY=''
 ARG front_env=''
 
 # build正式环境
