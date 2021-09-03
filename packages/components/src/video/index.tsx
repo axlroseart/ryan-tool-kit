@@ -57,7 +57,7 @@ const Video:React.FC<VideoPropsType> = (props) => {
   React.useEffect(() => {
     init();
     return () => {
-      player.current.dispose();
+      player.current && player.current.dispose();
     };
   }, [props]);
 
