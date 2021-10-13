@@ -1,5 +1,5 @@
 // 获取当前访问域名跟code的对应关系
-export const getAllianceType = function(){
+const getAllianceType = function(){
   const { origin } = location;
   // 学大
   if(origin.includes('xueda')){
@@ -12,3 +12,5 @@ export const getAllianceType = function(){
   // 标准版点程云
   return '102';
 };
+
+export default getAllianceType;

@@ -1,4 +1,4 @@
-import { loadResource } from '@frontend/dcc-utils';
+import loadResource from '../loadResource';
 
 
 export interface UploadInfo{

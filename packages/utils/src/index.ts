@@ -1,6 +1,11 @@
 export { default as add } from './add';
-export { COOKIE_COMMON_KEY, COOKIE_TRANS_KEY, dccCookie } from './cookie';
+export { default as dccCookie } from './cookie';
 export { default as loadResource } from './loadResource';
 export { default as aliUpload } from './aliUpload';
-export { DccRedirect } from './redirect';
-export { getAllianceType } from './getAllianceType';
+export { default as getAllianceType } from './getAllianceType';
+export { default as fileCanUpload } from './fileCanUpload';
+export { default as getFileExt } from './getFileExt';
+export { default as getSubCateLog } from './getSubCateLog';
+export { default as qiniuUpload } from './qiniuUpload';
+export { default as sessionStorage } from './sessionStorage';
+export { default as uploadCreate } from './uploadCreate';

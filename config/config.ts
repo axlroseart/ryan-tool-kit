@@ -37,6 +37,12 @@ export default defineConfig({
       title: '业务组件',
       children: ['video'],
     }],
+    '/constants': [
+      {
+        title: '通用枚举',
+        children: [],
+      },
+    ],
   },
   navs: [
     {
@@ -54,6 +60,10 @@ export default defineConfig({
     {
       title: 'components',
       path: '/components',
+    },
+    {
+      title: 'constants',
+      path: '/constants',
     },
     {
       title: 'GitLab',

@@ -11,6 +11,10 @@
     "baseUrl": ".",
     "paths": {
       "@frontend/dcc-system-components": ["src/index.ts"]
-    }
-  }
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "files": [
+    "../../typings.d.ts"
+  ],
 }

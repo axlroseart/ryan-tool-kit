@@ -1,17 +1,8 @@
-
+import { COOKIE_TRANS_KEY, COOKIE_COMMON_KEY } from '@frontend/dcc-constants';
 /**
  * 公共KEY无前缀
  * 端口私有加对应端口前缀 school、student、curr、manager...
  */
-// --需要转化key
-export enum COOKIE_TRANS_KEY {
-  USER_INFO = 'userInfo', // 用户相关信息
-}
-// --普通key
-export enum COOKIE_COMMON_KEY {
-  AUTHORIZATION = 'cnr_token', // 登录token
-  IS_SAAS = 'isSaas', //  标示当前用户所属机构类型
-}
 interface ICookieOptions {
   path?:string;
   domain?:string;
@@ -159,4 +150,4 @@ class DccCookie {
   }
 }
 
-export const dccCookie = new DccCookie();
+export default new DccCookie();
