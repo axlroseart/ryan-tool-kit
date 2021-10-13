@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 import { DccRedirect } from '../index';
-import { loginUrlMapPro, loginUrlMapTest } from '../../constants/redirect';
+import { loginUrlMapPro, loginUrlMapTest } from '../constants';
 
 describe('dcc redirect class test', () => {
   beforeAll(() => {

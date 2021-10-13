@@ -3,7 +3,7 @@
  * 暂时没对非常规domain做处理
  */
 import { COOKIE_COMMON_KEY } from '@frontend/dcc-constants';
-import dccCookie from '../cookie';
+import dccCookie from '../dccCookie';
 import getAllianceType from '../getAllianceType';
 export class DccRedirect {
     _mainDomain:string;

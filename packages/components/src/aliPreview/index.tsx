@@ -17,7 +17,7 @@ export interface IRefProps {
 
 declare const CODEMAOCONFIG:any;
 
-export const AliPreview:React.FunctionComponent<AliPreviewProps> = forwardRef<
+const AliPreview:React.FunctionComponent<AliPreviewProps> = forwardRef<
   IRefProps,
   AliPreviewProps
 >((props, ref) => {
@@ -66,3 +66,5 @@ export const AliPreview:React.FunctionComponent<AliPreviewProps> = forwardRef<
       ref={boxRef} />
   );
 });
+
+export default AliPreview;
