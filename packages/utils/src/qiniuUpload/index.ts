@@ -16,7 +16,7 @@ declare const CODEMAOCONFIG:any;
 class QiniuUpload {
   public uploadClient:CDNClient; // 上传实例
   public ossViewer:any;
-  constructor(parameters:IParameters) {
+  constructor(parameters:IParameters, container?:HTMLElement) {
     this.uploadClient = new CDNClient({
       projectName: parameters.projectName,
       env: parameters.env,
@@ -24,7 +24,7 @@ class QiniuUpload {
     this.ossViewer = new OSSViewer({
       env: CODEMAOCONFIG?.api?.captcha, // 'dev'|'staging'|'prod'|'test'
       platform: 'CNR',
-      container: new HTMLElement(),
+      container: container,
     });
   }
 

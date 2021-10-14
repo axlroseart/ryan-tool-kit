@@ -1,7 +1,6 @@
 // 阿里云文件预览
 // pdf、ppt文件预览使用该组件
-import * as React from 'react';
-import { useEffect, useRef, forwardRef, useImperativeHandle } from 'react';
+import React, { useEffect, useRef, forwardRef, useImperativeHandle } from 'react';
 import OSSViewer from '@frontend/oss-viewer';
 
 export interface AliPreviewProps {

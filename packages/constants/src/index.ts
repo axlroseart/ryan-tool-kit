@@ -1,6 +1,6 @@
 /** 文件类型 */
 export enum FILE_TYPE {
-    /** 机构相册 */
+  /** 机构相册 */
   ENUM_FILE_TYPE_ALLIANCE_ALBUM = 101, // 机构相册
   /** 跟进记录附件 */
   ENUM_FILE_TYPE_FOLLOW_ATTACH = 102, // 跟进记录附件
@@ -102,13 +102,13 @@ export const ATTACH_TYPE_URL = {
 
 /** Cookie key */
 export enum COOKIE_TRANS_KEY {
-    /** 用户相关信息 */
+  /** 用户相关信息 */
   USER_INFO = 'userInfo',
 }
 
 /** Cookie 普通key */
 export enum COOKIE_COMMON_KEY {
-    /** 登录token */
+  /** 登录token */
   AUTHORIZATION = 'cnr_token',
   /** 标示当前用户所属机构类型 */
   IS_SAAS = 'isSaas',
@@ -116,10 +116,24 @@ export enum COOKIE_COMMON_KEY {
 
 /** SessionStorageType */
 export enum SessionStorageType {
-    /** 机构id */
+  /** 机构id */
   USER_ALLIANCEID = 'USER_ALLIANCEID', // 机构id
   JEST_TEST = 'JEST_TEST'
 }
 
-/** 文件类名 */
+/** 需要上传至私有库的文件类名 */
 export const PRIVATE_FILES = ['pdf', 'ppt', 'pptx', 'doc', 'docm', 'docx', 'xls', 'xlsm', 'xlsx'];
+
+/**
+ * 订单状态
+ */
+export enum ORDER_STATUS_TYPE {
+  ENUM_ORDER_STATUS_TYPE_UNPAID = 101, // 未支付
+  ENUM_ORDER_STATUS_TYPE_PAYING = 102, // 支付中
+  ENUM_ORDER_STATUS_TYPE_CHECKING = 103, // 待审核
+  ENUM_ORDER_STATUS_TYPE_PAID = 104, // 审核通过
+  ENUM_ORDER_STATUS_TYPE_REFUNDING = 105, // 退费中
+  ENUM_ORDER_STATUS_TYPE_REFUNDED = 106, // 已退费
+  ENUM_ORDER_STATUS_TYPE_CANCELLED = 107, // 已取消
+  ENUM_ORDER_STATUS_TYPE_PAYED = 108, // 支付成功
+}
