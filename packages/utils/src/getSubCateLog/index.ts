@@ -18,11 +18,11 @@ function getSubCataLog(fileType:FILE_TYPE) {
       FILE_TYPE.ENUM_FILE_TYPE_SCHEDULE_PHOTO,
     ].find((item) => item === fileType)
   ) {
-    return `${BaseUrl + ATTACH_TYPE_URL[fileType as 101] + allianceid}/`;
+    return `${BaseUrl + ATTACH_TYPE_URL[fileType as FILE_TYPE] + allianceid}/`;
   }
 
   // --其他常规
-  return `${BaseUrl + ATTACH_TYPE_URL[fileType as 101]}`;
+  return `${BaseUrl + ATTACH_TYPE_URL[fileType as FILE_TYPE]}`;
 }
 
 export default getSubCataLog;

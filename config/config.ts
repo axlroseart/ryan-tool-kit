@@ -23,15 +23,15 @@ export default defineConfig({
   menus: {
     '/utils': [{
       title: '工具函数',
-      children: ['add', 'loadResource', 'fileCanUpload', 'getAllianceType', 'getFileExt'],
+      children: ['add', 'loadResource', 'fileCanUpload', 'getAllianceType', 'getFileExt', 'getSubCateLog'],
     },
     {
       title: '数据存储',
-      children: ['dccCookie', 'dccCookie/key'],
+      children: ['dccCookie', 'dccCookie/key', 'sessionStorage'],
     },
     {
       title: '资源上传',
-      children: ['aliUpload'],
+      children: ['aliUpload', 'qiniuUpload', 'uploadCreate'],
     }],
     '/hooks': [{
       title: 'State',
