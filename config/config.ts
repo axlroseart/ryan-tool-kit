@@ -7,14 +7,27 @@ export default defineConfig({
   mode: 'site',
   outputPath: './dist',
   hash: true,
+  chainWebpack: function(config, { webpack }) {
+    config
+      .plugin('define')
+      .tap((args) => {
+        args[0].CODEMAOCONFIG = JSON.stringify({
+          env: 'dev',
+          api: {
+            captcha: 'dev',
+          },
+        });
+        return args;
+      });
+  },
   menus: {
     '/utils': [{
       title: '工具函数',
-      children: ['add', 'loadResource'],
+      children: ['add', 'loadResource', 'fileCanUpload', 'getAllianceType', 'getFileExt'],
     },
     {
       title: '数据存储',
-      children: ['cookie', 'cookie/key'],
+      children: ['dccCookie', 'dccCookie/key'],
     },
     {
       title: '资源上传',
