@@ -1,10 +1,15 @@
 import * as React from 'react';
-import { CreationTool } from '@frontend/dcc-system-components';
-export default () =>
-//   const [type, setType] = React.useState(1);
-  (
-    <>
-      <CreationTool />
-    </>
-  );
+import { CreationTool, ApiEnv, ToolType } from '@frontend/dcc-system-components';
+export default () => (
+  <CreationTool
+    token={'test'}
+    apiEnv={ApiEnv.Test}
+    type={ToolType.Roki}
+    exportFile
+    uploadWork
+    onEvent={(event) => {
+      console.log(event);
+    }}
+    workId={2}/>
+);
 

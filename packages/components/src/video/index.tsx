@@ -1,11 +1,21 @@
 import * as React from 'react';
 import { loadResource } from '@frontend/dcc-utils';
-import { VideoPropsType } from './PropsType';
 declare const Aliplayer:any;
+
+export interface VideoProps {
+    width?:number;
+    height?:number;
+    source?:string;
+    vid?:string;
+    getAliVideoAuth?:() => Promise<string>;
+    type:'default'|'sceret';
+    otherConfig?:any;
+  }
+
 
 let randomId = Date.now().toString();
 
-const Video:React.FC<VideoPropsType> = (props) => {
+const Video:React.FC<VideoProps> = (props) => {
   const { width, height, type, source, vid, getAliVideoAuth, otherConfig } = props;
   const videoId = React.useRef<string>(`video-${randomId += 1}`);
   const player = React.useRef<any>(null);

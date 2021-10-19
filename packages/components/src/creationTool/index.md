@@ -7,7 +7,7 @@ nav:
 
 ## CreationTool
 
-创作工具
+创作工具 暂时只支持Kids
 
 ## 代码演示
 
@@ -17,10 +17,11 @@ nav:
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
-| width | 视频播放器宽度 | `number` | `100%` |
-| height | 视频播放器高度 | `number` | `500` |
-| type | 播放类型default(普通视频)、sceret（阿里云加密视频） | `default、sceret` | 无 |
-| source | 播放类型default，播放地址 | `string` | 无 |
-| vid | 播放类型sceret，播放vid | `string` | 无 |
-| getAliVideoAuth | 播放类型sceret，获取播放凭证方法 | `() => Promise<string>` | 无 |
-| otherConfig | 播放器其他配置 | `any` | 无 |
+| token | 登录凭证 | `string` | - |
+| workId | 作品id | `number` | - |
+| fileUrl | 工程文件 | `string` | - |
+| type | 工程类型| `ToolType` | - |
+| apiEnv | 环境变量 | `ApiEnv` | - |
+| exportFile | 是否显示导出按钮 | `boolean` | - |
+| uploadWork | 是否显示下载按钮 | `boolean` | - |
+| onEvent | SDK事件回调 | `DispatchEvent` | - |

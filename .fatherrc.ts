@@ -3,5 +3,5 @@ export default {
   //   cjs: 'rollup',
   esm: { type: 'babel' },
   cjs: { type: 'babel' },
-  pkgs: ['hooks','utils','components'],
+  pkgs: ['components','hooks','utils'],
 };
