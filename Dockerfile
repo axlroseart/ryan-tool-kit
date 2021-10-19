@@ -1,5 +1,5 @@
 # 基础镜像
-FROM node:11
+FROM registry-vpc.cn-hangzhou.aliyuncs.com/codemaohub/codemao-master:10-onbuild
 
 # 指定当前用户(codemao用户没有写入权限)
 # USER codemao
@@ -16,7 +16,6 @@ COPY . /usr/src/app/
 
 # gitlab npm仓库token
 ARG CI_JOB_TOKEN=''
-RUN npm config set '@crc:registry=https://gitlab.codemao.cn/api/v4/packages/npm/'
 RUN npm i
 RUN npm run bootstrap
 
