@@ -14,7 +14,7 @@
     "test_utils": "umi-test ./packages/utils --coverage",
     "test_components": "umi-test ./packages/components --coverage",
     "bootstrap": "lerna bootstrap --hoist",
-    "pub": "lerna publish from-package --yes --no-verify-registry"
+    "pub": "lerna publish from-package --yes"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
