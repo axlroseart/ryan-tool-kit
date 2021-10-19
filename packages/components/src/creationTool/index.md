@@ -17,9 +17,11 @@ nav:
 
 | 属性 | 说明 | 类型 | 默认值 |
 | --- | --- | --- | --- |
+| width | 容器宽度 | `number、string` | 100% |
+| height | 容器高度 | `number、string` | 100% |
 | token | 登录凭证 | `string` | - |
-| workId | 作品id | `number` | - |
-| fileUrl | 工程文件 | `string` | - |
+| workId | 作品id (workId 优选于 fileUrl) | `number` | - |
+| fileUrl | 工程文件  (workId 优选于 fileUrl) | `string` | - |
 | type | 工程类型| `ToolType` | - |
 | apiEnv | 环境变量 | `ApiEnv` | - |
 | exportFile | 是否显示导出按钮 | `boolean` | - |

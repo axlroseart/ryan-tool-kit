@@ -8,9 +8,15 @@ import {
 } from '@crc/tools-sdk';
 import '../styles/creationTool/index.less';
 
-export { ToolType, IBaseEvent, DispatchEvent, ApiEnv } from '@crc/tools-sdk';
+export type { IBaseEvent, DispatchEvent } from '@crc/tools-sdk';
+
+export { ToolType, ApiEnv } from '@crc/tools-sdk';
 
 export interface CreationToolProps {
+    /** 容器宽度 默认100% */
+    width?:number | string |'100%';
+    /** 容器高度 默认100% */
+    height?:number | string |'100%';
     /** 登录凭证 */
     token:string;
     /** 作品id */
@@ -30,7 +36,7 @@ export interface CreationToolProps {
 }
 
 const CreationTool:React.FC<CreationToolProps> = (props) => {
-  const { token, workId, fileUrl, type, apiEnv, exportFile, uploadWork, onEvent } = props;
+  const { token, workId, fileUrl, type, apiEnv, exportFile, uploadWork, onEvent, width = '100%', height = '100%' } = props;
   const toolContaner = React.useRef<HTMLIFrameElement>(null);
   const creationTooler = React.useRef<any>(null);
 
@@ -73,6 +79,7 @@ const CreationTool:React.FC<CreationToolProps> = (props) => {
   return (
     <div
       ref={toolContaner}
+      style={{ width, height }}
       id="creation-tool" />
   );
 };

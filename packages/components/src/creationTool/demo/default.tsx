@@ -6,6 +6,7 @@ export default () => (
     apiEnv={ApiEnv.Test}
     type={ToolType.Roki}
     exportFile
+    height={350}
     uploadWork
     onEvent={(event) => {
       console.log(event);

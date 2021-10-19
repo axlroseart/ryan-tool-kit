@@ -3,4 +3,5 @@ export type { ButtonProps } from './button';
 export { default as Video } from './video';
 export type { VideoProps } from './video';
 export { default as CreationTool } from './creationTool';
-export { ToolType, IBaseEvent, DispatchEvent, CreationToolProps, ApiEnv } from './creationTool';
+export type { CreationToolProps, IBaseEvent, DispatchEvent } from './creationTool';
+export { ToolType, ApiEnv } from './creationTool';
