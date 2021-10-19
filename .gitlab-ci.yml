@@ -25,7 +25,6 @@ install:
   tags:
     - frontend
   script:
-    - echo '${CI_PROJECT_ROOT_NAMESPACE}'
     - npm config set '@${CI_PROJECT_ROOT_NAMESPACE}:registry=https://gitlab.codemao.cn/api/v4/packages/npm/'
     - npm config set '@crc:registry=https://gitlab.codemao.cn/api/v4/packages/npm/'
     - npm config set '//gitlab.codemao.cn/api/v4/packages/npm/:_authToken' ${CI_JOB_TOKEN}
