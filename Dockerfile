@@ -17,7 +17,7 @@ COPY . /usr/src/app/
 # gitlab npm仓库token
 ARG CI_JOB_TOKEN=''
 
-RUN npm i
+RUN npm i --unsafe-perm
 # RUN npm run bootstrap
 
 # 复制代码
