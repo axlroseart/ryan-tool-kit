@@ -23,7 +23,7 @@ sessionStorage.set('allianceType', '102');
 ```ts
 import { sessionStorage } from '@frontend/dcc-utils';
 
-dccCookie.get('allianceType');
+sessionStorage.get('allianceType');
 ```
 
 ### 3.clearStorage

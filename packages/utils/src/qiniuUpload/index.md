@@ -14,10 +14,11 @@ nav:
 ```ts
 import { QiniuUpload } from '@frontend/dcc-utils';
 
+// projectName: cmdb仓库名，与cmdb上的cdn配置相关联；env：环境
 const privateUpload = new QiniuUpload({
   projectName: 'cnr_manager',
   env: CODEMAOCONFIG?.api?.captcha,
-}); // projectName: cmdb仓库名，与cmdb上的cdn配置相关联；env：环境
+}); 
 
 const qiniuUp = await privateUpload.create(file, FILE_TYPE.ENUM_FILE_TYPE_COURSEWARE, {...});
 qiniuUp?.start();
