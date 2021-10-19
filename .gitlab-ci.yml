@@ -61,7 +61,9 @@ publish:
   tags:
     - frontend
   script:
+    - echo '${CI_PROJECT_ID}'
     - npm config set '@${CI_PROJECT_ROOT_NAMESPACE}:registry=https://gitlab.codemao.cn/api/v4/projects/${CI_PROJECT_ID}/packages/npm/'
+    - npm config set '@crc:registry=https://gitlab.codemao.cn/api/v4/projects/${CI_PROJECT_ID}/packages/npm/'
     - npm config set '//gitlab.codemao.cn/api/v4/packages/npm/:_authToken' ${CI_JOB_TOKEN}
     - npm config set '//gitlab.codemao.cn/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken' ${CI_JOB_TOKEN}
     - npm run pub
