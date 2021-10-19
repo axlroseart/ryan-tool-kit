@@ -31,12 +31,14 @@ export interface CreationToolProps {
     exportFile:boolean;
     /** 是否显示下载按钮 */
     uploadWork:boolean;
+    /** 是否显示保存按钮 */
+    save:boolean;
     /** SDK事件回调 */
     onEvent:DispatchEvent;
 }
 
 const CreationTool:React.FC<CreationToolProps> = (props) => {
-  const { token, workId, fileUrl, type, apiEnv, exportFile, uploadWork, onEvent, width = '100%', height = '100%' } = props;
+  const { token, workId, fileUrl, type, apiEnv, exportFile, uploadWork, onEvent, width = '100%', save, height = '100%' } = props;
   const toolContaner = React.useRef<HTMLIFrameElement>(null);
   const creationTooler = React.useRef<any>(null);
 
@@ -53,6 +55,7 @@ const CreationTool:React.FC<CreationToolProps> = (props) => {
         configuration: {
           exportFile,
           uploadWork,
+          save,
         },
         workId,
         fileUrl,

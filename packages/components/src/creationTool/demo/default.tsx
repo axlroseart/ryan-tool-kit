@@ -4,12 +4,13 @@ export default () => (
   <CreationTool
     token={'test'}
     apiEnv={ApiEnv.Test}
+    save
     type={ToolType.Roki}
     exportFile
     height={350}
-    uploadWork
+    uploadWork={false}
     onEvent={(event) => {
-      console.log(event);
+      console.log('event', event);
     }}
     workId={2}/>
 );

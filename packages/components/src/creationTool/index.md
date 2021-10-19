@@ -24,6 +24,7 @@ nav:
 | fileUrl | 工程文件  (workId 优选于 fileUrl) | `string` | - |
 | type | 工程类型| `ToolType` | - |
 | apiEnv | 环境变量 | `ApiEnv` | - |
+| save | 是否显示保存按钮 | `boolean` | - |
 | exportFile | 是否显示导出按钮 | `boolean` | - |
 | uploadWork | 是否显示下载按钮 | `boolean` | - |
 | onEvent | SDK事件回调 | `DispatchEvent` | - |
