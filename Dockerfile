@@ -1,8 +1,8 @@
 # 基础镜像
-FROM registry-vpc.cn-hangzhou.aliyuncs.com/codemaohub/codemao-master:10-onbuild
+FROM node:11
 
 # 指定当前用户(codemao用户没有写入权限)
-USER codemao
+# USER codemao
 
 # Workdir is unprivileged user home
 WORKDIR /usr/src/app
@@ -11,12 +11,13 @@ WORKDIR /usr/src/app
 # COPY package.json /usr/src/app
 # COPY lerna.json /usr/src/app
 # COPY package-lock.json /usr/src/app
-COPY /public/.npmrc /usr/src/app
+# COPY /public/.npmrc /usr/src/app
 COPY . /usr/src/app/
 
 # gitlab npm仓库token
 ARG CI_JOB_TOKEN=''
-RUN npm install
+
+RUN npm i
 RUN npm run bootstrap
 
 # 复制代码
