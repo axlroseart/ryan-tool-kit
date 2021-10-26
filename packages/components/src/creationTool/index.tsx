@@ -55,7 +55,9 @@ const CreationTool:React.FC<CreationToolProps> = (props) => {
         configuration: {
           exportFile,
           uploadWork,
-          save,
+          save: {
+            showButton: save,
+          },
         },
         workId,
         fileUrl,
