@@ -1,6 +1,6 @@
 {
   "name": "@frontend/dcc-system-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@crc/tools-sdk": "^1.0.5",
+    "@crc/tools-sdk": "^1.0.6",
     "@frontend/dcc-utils": "0.0.8",
     "classnames": "^2.2.6"
   },

@@ -12,6 +12,9 @@ export default () => (
     onEvent={(event) => {
       console.log('event', event);
     }}
+    onReady={() => {
+      console.log('初始化完成');
+    }}
     workId={2}/>
 );
 

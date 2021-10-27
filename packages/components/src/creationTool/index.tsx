@@ -30,15 +30,19 @@ export interface CreationToolProps {
     /** 是否显示导出按钮 */
     exportFile:boolean;
     /** 是否显示下载按钮 */
-    uploadWork:boolean;
+    uploadWork?:boolean;
     /** 是否显示保存按钮 */
-    save:boolean;
+    save?:boolean;
     /** SDK事件回调 */
-    onEvent:DispatchEvent;
+    onEvent?:DispatchEvent;
+    /** presetLink */
+    presetLink?:string;
+    /** onReady初始完成 */
+    onReady?:() => void;
 }
 
 const CreationTool:React.FC<CreationToolProps> = (props) => {
-  const { token, workId, fileUrl, type, apiEnv, exportFile, uploadWork, onEvent, width = '100%', save, height = '100%' } = props;
+  const { token, workId, fileUrl, type, apiEnv, exportFile, uploadWork, onReady, onEvent, width = '100%', save, height = '100%' } = props;
   const toolContaner = React.useRef<HTMLIFrameElement>(null);
   const creationTooler = React.useRef<any>(null);
 
@@ -67,6 +71,7 @@ const CreationTool:React.FC<CreationToolProps> = (props) => {
       const sdk = result.body.cSDK;
       const isOk = ok(await sdk.application.ready());
       if(isOk){
+        onReady && onReady();
         creationTooler.current = sdk.application;
       }
     }

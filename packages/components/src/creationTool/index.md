@@ -28,3 +28,5 @@ nav:
 | exportFile | 是否显示导出按钮 | `boolean` | - |
 | uploadWork | 是否显示下载按钮 | `boolean` | - |
 | onEvent | SDK事件回调 | `DispatchEvent` | - |
+| onReady | onReady初始完成 | `()=>void` | - |
+| presetLink | presetLink | `string` | - |
