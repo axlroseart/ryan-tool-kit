@@ -30,3 +30,4 @@ nav:
 | onEvent | SDK事件回调 | `DispatchEvent` | - |
 | onReady | onReady初始完成 | `()=>void` | - |
 | presetLink | presetLink | `string` | - |
+| workName | 保存作品名称 | `string` | - |

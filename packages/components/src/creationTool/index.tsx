@@ -39,10 +39,12 @@ export interface CreationToolProps {
     presetLink?:string;
     /** onReady初始完成 */
     onReady?:() => void;
+    /** 作品名称 */
+    workName?:string;
 }
 
 const CreationTool:React.FC<CreationToolProps> = (props) => {
-  const { token, workId, fileUrl, type, apiEnv, exportFile, uploadWork, onReady, onEvent, width = '100%', save, height = '100%' } = props;
+  const { token, workId, fileUrl, type, apiEnv, exportFile, uploadWork, onReady, onEvent, width = '100%', save, height = '100%', workName } = props;
   const toolContaner = React.useRef<HTMLIFrameElement>(null);
   const creationTooler = React.useRef<any>(null);
 
@@ -61,6 +63,7 @@ const CreationTool:React.FC<CreationToolProps> = (props) => {
           uploadWork,
           save: {
             showButton: save,
+            workName,
           },
         },
         workId,
