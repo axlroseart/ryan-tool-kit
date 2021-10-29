@@ -33,3 +33,9 @@ nav:
 | workName | 保存作品名称 | `string` | - |
 | setMaterialConfigs | 设置素材库配置 | `SetMaterialConfigs` | - |
 
+### SetMaterialConfigs
+
+| 属性 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| scene | 背景的素材配置，当前使用url作为参数 | `string` | - |
+| actor | 角色的素材配置，当前使用url作为参数 | `string` | - |
