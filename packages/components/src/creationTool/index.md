@@ -31,3 +31,5 @@ nav:
 | onReady | onReady初始完成 | `()=>void` | - |
 | presetLink | presetLink | `string` | - |
 | workName | 保存作品名称 | `string` | - |
+| setMaterialConfigs | 设置素材库配置 | `SetMaterialConfigs` | - |
+

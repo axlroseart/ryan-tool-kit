@@ -12,6 +12,17 @@ export type { IBaseEvent, DispatchEvent } from '@crc/tools-sdk';
 
 export { ToolType, ApiEnv } from '@crc/tools-sdk';
 
+export interface SetMaterialConfigs{
+ /**
+   * 背景的素材配置，当前使用url作为参数
+   */
+  scene?:string;
+  /**
+   * 角色的素材配置，当前使用url作为参数
+   */
+  actor?:string;
+}
+
 export interface CreationToolProps {
     /** 容器宽度 默认100% */
     width?:number | string |'100%';
@@ -41,10 +52,13 @@ export interface CreationToolProps {
     onReady?:() => void;
     /** 作品名称 */
     workName?:string;
+    /** 设置素材库配置 */
+    setMaterialConfigs?:SetMaterialConfigs;
 }
 
 const CreationTool:React.FC<CreationToolProps> = (props) => {
-  const { token, workId, fileUrl, type, apiEnv, exportFile, uploadWork, onReady, onEvent, width = '100%', save, height = '100%', workName } = props;
+  const { token, workId, fileUrl, type, apiEnv, exportFile, uploadWork,
+    onReady, onEvent, width = '100%', save, height = '100%', workName, setMaterialConfigs } = props;
   const toolContaner = React.useRef<HTMLIFrameElement>(null);
   const creationTooler = React.useRef<any>(null);
 
@@ -74,6 +88,7 @@ const CreationTool:React.FC<CreationToolProps> = (props) => {
       const sdk = result.body.cSDK;
       const isOk = ok(await sdk.application.ready());
       if(isOk){
+        setMaterialConfigs && await sdk.application.setMaterialConfigs(setMaterialConfigs);
         onReady && onReady();
         creationTooler.current = sdk.application;
       }
