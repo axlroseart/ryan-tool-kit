@@ -23,5 +23,6 @@ es/
 # ide
 /.vscode
 /.idea
+/.npmrc
 
 coverage

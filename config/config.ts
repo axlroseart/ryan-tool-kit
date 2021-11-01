@@ -48,7 +48,7 @@ export default defineConfig({
     },
     {
       title: '业务组件',
-      children: ['video'],
+      children: ['video', 'creationTool'],
     }],
     '/constants': [
       {
