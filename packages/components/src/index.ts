@@ -6,3 +6,4 @@ export type { VideoProps } from './video';
 export { default as CreationTool } from './creationTool';
 export type { CreationToolProps, IBaseEvent, DispatchEvent } from './creationTool';
 export { ToolType, ApiEnv } from './creationTool';
+export { default as DataCard } from './dataCard';

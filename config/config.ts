@@ -48,7 +48,7 @@ export default defineConfig({
     },
     {
       title: '业务组件',
-      children: ['video', 'creationTool'],
+      children: ['video', 'creationTool', 'dataCard'],
     }],
     '/constants': [
       {
@@ -82,5 +82,9 @@ export default defineConfig({
       title: 'GitLab',
       path: 'https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit',
     },
+  ],
+  extraPostCSSPlugins: [
+    require('tailwindcss'),
+    require('postcss-import'),
   ],
 });
