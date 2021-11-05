@@ -3,40 +3,40 @@ title: 快速上手
 order: 1
 ---
 
-# Dcc Tool Kit
+# Ryan Drx Tool Kit
 
-dcc-tool-kit 是点成云前端公共套件，主要用`@frontend/dcc-utils 工具库`、`@frontend/dcc-hooks hooks库`、`@frontend/dcc-system-components 业务组件库（PC）`三个模块组成，主要服务于新零售前端业务线。
+ryan-drx-tool-kit 是点成云前端公共套件，主要用`@ryan-drx/utils 工具库`、`@ryan-drx/hooks hooks库`、`@ryan-drx/components 业务组件库（PC）`三个模块组成，主要服务于新零售前端业务线。
 
 ## 快速上手
 ### 1. 安装
 
 ```bash
-npm install @frontend/dcc-utils --save
+npm install @ryan-drx/utils --save
 
-npm install @frontend/dcc-hooks --save
+npm install @ryan-drx/hooks --save
 
-npm install @frontend/dcc-system-components --save
+npm install @ryan-drx/components --save
 ```
 
 ### 2. 使用
-#### 1. **@frontend/dcc-system-components**
+#### 1. **@ryan-drx/components**
 ``` ts
-import { Button } from "@frontend/dcc-system-components";
+import { Button } from "@ryan-drx/components";
 
 ReactDOM.render(<Button>Start</Button>, mountNode);
 ```
 
-#### 2. **@frontend/dcc-utils**
+#### 2. **@ryan-drx/utils**
 ``` ts
-import { add } from "@frontend/dcc-utils";
+import { add } from "@ryan-drx/utils";
 
 add(1,2)
 ```
 
-#### 3. **@frontend/dcc-hooks**
+#### 3. **@ryan-drx/hooks**
 ``` ts
 import * as React from "react";
-import { useLoading } from "@frontend/dcc-hooks";
+import { useLoading } from "@ryan-drx/hooks";
 
 export default () => {
   const { isLoading, setLoading } = useLoading();
@@ -59,7 +59,7 @@ export default () => {
     // .babelrc or babel-loader option
     {
         "plugins": [
-            ["import", { "libraryName": "@frontend/dcc-system-components"}]
+            ["import", { "libraryName": "@ryan-drx/components"}]
         ]
     }
     ```
@@ -68,9 +68,9 @@ export default () => {
        {
             "babel": {
                 "plugins": [
-                    ["import", { "libraryName": "@frontend/dcc-system-components", "camel2DashComponentName": false }],
-                    ["import", { "libraryName": "@frontend/dcc-utils", "camel2DashComponentName": false }],
-                    ["import", { "libraryName": "@frontend/dcc-hooks", "camel2DashComponentName": false }],
+                    ["import", { "libraryName": "@ryan-drx/components", "camel2DashComponentName": false }],
+                    ["import", { "libraryName": "@ryan-drx/utils", "camel2DashComponentName": false }],
+                    ["import", { "libraryName": "@ryan-drx/hooks", "camel2DashComponentName": false }],
                 ],
             },
        }
@@ -94,6 +94,6 @@ export default () => {
             } 
         },
     ],
-    "include": /node_modules\/@frontend\/dcc-system-components/,
+    "include": /node_modules\/@ryan-drx\/components/,
 },
 ```

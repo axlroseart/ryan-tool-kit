@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useBoolean } from '@frontend/dcc-hooks';
+import { useBoolean } from '@ryan-drx/hooks';
 
 export default () => {
   const [state, { setTrue, setFalse }] = useBoolean(true);

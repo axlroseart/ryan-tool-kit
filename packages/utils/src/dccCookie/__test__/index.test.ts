@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import { COOKIE_COMMON_KEY, COOKIE_TRANS_KEY } from '@frontend/dcc-constants';
+import { COOKIE_COMMON_KEY, COOKIE_TRANS_KEY } from '@ryan-drx/constants';
 import dccCookie from '../index';
 
 

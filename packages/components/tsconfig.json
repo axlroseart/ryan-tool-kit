@@ -10,7 +10,7 @@
     "declaration": true,
     "baseUrl": ".",
     "paths": {
-      "@frontend/dcc-system-components": ["src/index.ts"]
+      "@ryan-drx/components": ["src/index.ts"]
     },
     "allowSyntheticDefaultImports": true
   },

@@ -1,7 +1,7 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  title: 'Dcc Tool Kit',
+  title: 'Ryan Drx Tool Kit',
   favicon: '/images/logo.png',
   logo: '/images/logo.png',
   mode: 'site',
@@ -23,7 +23,7 @@ export default defineConfig({
   menus: {
     '/utils': [{
       title: '工具函数',
-      children: ['add', 'loadResource', 'fileCanUpload', 'getAllianceType', 'getFileExt', 'getSubCateLog'],
+      children: ['add', 'loadResource', 'fileCanUpload', 'getFileExt', 'getSubCateLog'],
     },
     {
       title: '数据存储',
@@ -31,7 +31,7 @@ export default defineConfig({
     },
     {
       title: '资源上传',
-      children: ['aliUpload', 'qiniuUpload', 'uploadCreate'],
+      children: ['aliUpload'],
     }],
     '/hooks': [{
       title: 'State',
@@ -48,7 +48,7 @@ export default defineConfig({
     },
     {
       title: '业务组件',
-      children: ['video', 'creationTool', 'dataCard'],
+      children: ['dataCard'],
     }],
     '/constants': [
       {
@@ -79,8 +79,8 @@ export default defineConfig({
       path: '/constants',
     },
     {
-      title: 'GitLab',
-      path: 'https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit',
+      title: 'GitHub',
+      path: 'https://github.com/axlroseart/ryan-tool-kit',
     },
   ],
   extraPostCSSPlugins: [

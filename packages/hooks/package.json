@@ -1,6 +1,6 @@
 {
-  "name": "@frontend/dcc-hooks",
-  "version": "0.0.5",
+  "name": "@ryan-drx/hooks",
+  "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",

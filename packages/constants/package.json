@@ -1,5 +1,5 @@
 {
-  "name": "@frontend/dcc-constants",
+  "name": "@ryan-drx/constants",
   "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",

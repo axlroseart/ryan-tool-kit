@@ -1,4 +1,4 @@
-import { SessionStorageType, FILE_TYPE, ATTACH_TYPE_URL } from '@frontend/dcc-constants';
+import { SessionStorageType, FILE_TYPE, ATTACH_TYPE_URL } from '@ryan-drx/constants';
 import SessionStorage from '../sessionStorage';
 
 // 根据fileType获得对应业务子目录

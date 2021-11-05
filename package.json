@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "dcc-tool-kit",
-  "version": "1.2.5",
+  "name": "ryan-drx-tool-kit",
+  "version": "0.0.1",
   "scripts": {
     "postinstall": "npm run bootstrap",
     "start": "dumi dev",

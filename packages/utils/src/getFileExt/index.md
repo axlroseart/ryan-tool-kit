@@ -12,7 +12,7 @@ nav:
 ### 使用
 
 ```ts
-import { getFileExt } from '@frontend/dcc-utils';
+import { getFileExt } from '@ryan-drx/utils';
 
 const fileUrl = 'https://staging-dcc-pages.codemao.biz/logo.png'
 const fileExt = getFileExt(getFileExt);  // png

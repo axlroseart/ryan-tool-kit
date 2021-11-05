@@ -6,7 +6,7 @@ nav:
 
 # cookie
 
-cookie常用操作方法与点程云业务常用Key值
+cookie常用操作方法与业务常用Key值
 
 
 ## 通用方法
@@ -14,8 +14,8 @@ cookie常用操作方法与点程云业务常用Key值
 ### 1.setCookie
 设置字符串cookie
 ```ts
-import { dccCookie } from '@frontend/dcc-utils';
-import { COOKIE_COMMON_KEY } from '@frontend/dcc-constants';
+import { dccCookie } from '@ryan-drx/utils';
+import { COOKIE_COMMON_KEY } from '@ryan-drx/constants';
 
 dccCookie.setCookie(COOKIE_COMMON_KEY.IS_SAAS, '102');
 ```
@@ -23,8 +23,8 @@ dccCookie.setCookie(COOKIE_COMMON_KEY.IS_SAAS, '102');
 ### 2.setTransCookie
 设置对象、数字cookie
 ```ts
- import { dccCookie } from '@frontend/dcc-utils';
-import { COOKIE_COMMON_KEY } from '@frontend/dcc-constants';
+ import { dccCookie } from '@ryan-drx/utils';
+import { COOKIE_COMMON_KEY } from '@ryan-drx/constants';
 
 dccCookie.setCookie(COOKIE_COMMON_KEY.IS_SAAS, {userInfo:2});
 ```
@@ -32,8 +32,8 @@ dccCookie.setCookie(COOKIE_COMMON_KEY.IS_SAAS, {userInfo:2});
 ### 3.getCookie
 获取值为字符串数据的cookie
 ```ts
-import { dccCookie } from '@frontend/dcc-utils';
-import { COOKIE_COMMON_KEY } from '@frontend/dcc-constants';
+import { dccCookie } from '@ryan-drx/utils';
+import { COOKIE_COMMON_KEY } from '@ryan-drx/constants';
 
 dccCookie.getCookie(COOKIE_COMMON_KEY.IS_SAAS)
 ```
@@ -41,8 +41,8 @@ dccCookie.getCookie(COOKIE_COMMON_KEY.IS_SAAS)
 ### 4.getTransCookie
 获取值为对象或者数字的cookie
 ```ts
-import { dccCookie } from '@frontend/dcc-utils';
-import { COOKIE_COMMON_KEY } from '@frontend/dcc-constants';
+import { dccCookie } from '@ryan-drx/utils';
+import { COOKIE_COMMON_KEY } from '@ryan-drx/constants';
 
 dccCookie.getTransCookie(COOKIE_COMMON_KEY.IS_SAAS)
 

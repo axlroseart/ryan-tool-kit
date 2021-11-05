@@ -1,4 +1,4 @@
-import { SessionStorageType } from '@frontend/dcc-constants';
+import { SessionStorageType } from '@ryan-drx/constants';
 
 /**
  * session storage control

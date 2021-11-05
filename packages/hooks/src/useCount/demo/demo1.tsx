@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useCount } from '@frontend/dcc-hooks';
+import { useCount } from '@ryan-drx/hooks';
 
 export default () => {
   const { current, startCounter, status } = useCount();
