@@ -2,8 +2,9 @@
  * 动态处理页面跳转逻辑
  * 暂时没对非常规domain做处理
  */
-import { getAllianceType } from '../getAllianceType';
-import { dccCookie, COOKIE_COMMON_KEY } from '../cookie';
+import { COOKIE_COMMON_KEY } from '@frontend/dcc-constants';
+import dccCookie from '../dccCookie';
+import getAllianceType from '../getAllianceType';
 export class DccRedirect {
     _mainDomain:string;
     _specificKey:string[];

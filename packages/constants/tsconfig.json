@@ -10,9 +10,8 @@
     "declaration": true,
     "baseUrl": ".",
     "paths": {
-      "@frontend/dcc-system-components": ["src/index.ts"]
-    },
-    "allowSyntheticDefaultImports": true
+      "@frontend/dcc-constants": ["src/index.ts"]
+    }
   },
   "files": [
     "../../typings.d.ts"

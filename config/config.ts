@@ -7,18 +7,31 @@ export default defineConfig({
   mode: 'site',
   outputPath: './dist',
   hash: true,
+  chainWebpack: function(config, { webpack }) {
+    config
+      .plugin('define')
+      .tap((args) => {
+        args[0].CODEMAOCONFIG = JSON.stringify({
+          env: 'dev',
+          api: {
+            captcha: 'dev',
+          },
+        });
+        return args;
+      });
+  },
   menus: {
     '/utils': [{
       title: '工具函数',
-      children: ['add', 'loadResource'],
+      children: ['add', 'loadResource', 'fileCanUpload', 'getAllianceType', 'getFileExt', 'getSubCateLog'],
     },
     {
       title: '数据存储',
-      children: ['cookie', 'cookie/key'],
+      children: ['dccCookie', 'dccCookie/key', 'sessionStorage'],
     },
     {
       title: '资源上传',
-      children: ['aliUpload'],
+      children: ['aliUpload', 'qiniuUpload', 'uploadCreate'],
     }],
     '/hooks': [{
       title: 'State',
@@ -35,8 +48,14 @@ export default defineConfig({
     },
     {
       title: '业务组件',
-      children: ['video', 'creationTool'],
+      children: ['video', 'creationTool', 'dataCard'],
     }],
+    '/constants': [
+      {
+        title: '通用枚举',
+        children: [],
+      },
+    ],
   },
   navs: [
     {
@@ -56,8 +75,16 @@ export default defineConfig({
       path: '/components',
     },
     {
+      title: 'constants',
+      path: '/constants',
+    },
+    {
       title: 'GitLab',
       path: 'https://gitlab.codemao.cn/frontend/new-retail/dcc/dcc-tool-kit',
     },
+  ],
+  extraPostCSSPlugins: [
+    require('tailwindcss'),
+    require('postcss-import'),
   ],
 });
