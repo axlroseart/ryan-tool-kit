@@ -7,7 +7,7 @@ order: 2
 
 ## 目录说明
 ```shell
-dcc-tool-kit
+ryan-drx-tool-kit
 ├─ config                                   配置文件
 ├─ docs                                     文档
 ├─ packages                                 packages

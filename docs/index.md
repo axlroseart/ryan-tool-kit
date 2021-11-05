@@ -1,9 +1,9 @@
 ---
-title: Dcc Tool Kit
+title: Ryan Drx Tool Kit
 order: 10
 hero:
-  title: Dcc Tool Kit
-  desc: 点程云前端通用套件
+  title: Ryan Drx Tool Kit
+  desc: 前端通用套件
   actions:
     - text: 开发指南
       link: ./guide
@@ -23,5 +23,5 @@ features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/7a26c287-d7d8-42d6-8a55-c9aa4c097149.webp
     title: React Components
     desc: 基于业务，实现可复用公共组件，提高开发效率
-footer: DCC-TOOL-KIT <br /> Design by 点成云前端<br /> Docs by [dumi](https://d.umijs.org)
+footer: Ryan Drx Tool Kit <br /> Design by Ryan<br /> Docs by [dumi](https://d.umijs.org)
 ---

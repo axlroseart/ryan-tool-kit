@@ -6,12 +6,12 @@ nav:
 
 # cookie Key
 
-点程云业务 Cookie 统一Key
+业务 Cookie 统一Key
 
 ## COOKIE_TRANS_KEY
 cookie值为对象或者数字的key
 ```ts
-import { COOKIE_TRANS_KEY } from '@frontend/dcc-constants';
+import { COOKIE_TRANS_KEY } from '@ryan-drx/constants';
 
 // COOKIE_TRANS_KEY.USER_INFO
 ```
@@ -22,7 +22,7 @@ import { COOKIE_TRANS_KEY } from '@frontend/dcc-constants';
 ## COOKIE_COMMON_KEY
 cookie值为字符串的key
 ```ts
-import { COOKIE_COMMON_KEY } from '@frontend/dcc-constants';
+import { COOKIE_COMMON_KEY } from '@ryan-drx/constants';
 
 // COOKIE_COMMON_KEY.AUTHORIZATION
 export enum COOKIE_COMMON_KEY {

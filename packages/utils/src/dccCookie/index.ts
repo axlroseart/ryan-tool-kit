@@ -1,4 +1,4 @@
-import { COOKIE_TRANS_KEY, COOKIE_COMMON_KEY } from '@frontend/dcc-constants';
+import { COOKIE_TRANS_KEY, COOKIE_COMMON_KEY } from '@ryan-drx/constants';
 /**
  * 公共KEY无前缀
  * 端口私有加对应端口前缀 school、student、curr、manager...

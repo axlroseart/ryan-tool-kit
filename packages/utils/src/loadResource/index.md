@@ -12,7 +12,7 @@ nav:
 ### 加载js资源
 
 ```ts
-import { loadResource } from '@frontend/dcc-utils';
+import { loadResource } from '@ryan-drx/utils';
 
 const isSuccess = await loadResource({
     resourceUrl: 'xxx.js',
@@ -23,7 +23,7 @@ const isSuccess = await loadResource({
 ### 加载css资源
 
 ```ts
-import { loadResource } from '@frontend/dcc-utils';
+import { loadResource } from '@ryan-drx/utils';
 
 const isSuccess = await loadResource({
     resourceUrl: 'xxx.css',

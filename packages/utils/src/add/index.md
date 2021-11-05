@@ -12,7 +12,7 @@ nav:
 ### 使用一
 
 ```ts
-import { add } from '@frontend/dcc-utils';
+import { add } from '@ryan-drx/utils';
 
 add(1, 2); // 3
 ```
@@ -20,7 +20,7 @@ add(1, 2); // 3
 ### 使用二
 
 ```ts
-import { add } from '@frontend/dcc-utils';
+import { add } from '@ryan-drx/utils';
 
 add(1, 2); // 3
 ```

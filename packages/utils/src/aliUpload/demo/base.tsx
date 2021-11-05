@@ -1,6 +1,6 @@
 import * as React from 'react';
 import axios from 'axios';
-import { aliUpload } from '@frontend/dcc-utils';
+import { aliUpload } from '@ryan-drx/utils';
 import './index.less';
 
 export default () => {

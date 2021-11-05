@@ -1,18 +1,18 @@
 ---
-title: 关于Dcc Tool Kit
+title: 关于Ryan Drx Tool Kit
 order: 10000
 ---
 
-# 关于Dcc Tool Kit
+# 关于Ryan Drx Tool Kit
 
-* *Dcc Tool Kit* 文档基于dumi、打包基于father构建。
-* *Dcc Tool Kit* 使用lerna包管理工具，主要由dcc-utils、dcc-hooks、dcc-system-components三个包组成。
-* *Dcc Tool Kit* 具备完整的CI流程，致力于自动化构建、发包。
+* *Ryan Drx Tool Kit* 文档基于dumi、打包基于father构建。
+* *Ryan Drx Tool Kit* 使用lerna包管理工具，主要由dcc-utils、dcc-hooks、dcc-system-components三个包组成。
+* *Ryan Drx Tool Kit* 具备完整的CI流程，致力于自动化构建、发包。
 
 ## 一、目录说明
 
 ```
-dcc-tool-kit
+ryan-drx-tool-kit
 ├─ bin                                      文档express服务
 ├─ config                                   配置文件
 ├─ docs                                     文档
@@ -137,7 +137,7 @@ Lerna 是一种工具，针对 使用 git 和 npm 管理多软件包代码仓库
 
 ### 2.4、打包构建
 
-**Dcc Tool Kit**使用的构建工具是 [father](https://github.com/umijs/father)
+**Ryan Drx Tool Kit**使用的构建工具是 [father](https://github.com/umijs/father)
 
 father基于rollup二次封装，致力于通过简单的配置来适配前端构建的各种需求。使用者不需要关注引入rollup的第三方依赖。
 

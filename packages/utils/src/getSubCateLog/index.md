@@ -12,7 +12,7 @@ nav:
 ### 使用
 
 ```ts
-import { getSubCataLog } from '@frontend/dcc-utils';
+import { getSubCataLog } from '@ryan-drx/utils';
 
 // 201 是课件资源
 const fileExt = getSubCataLog(201);  //  => /cnr/curriculum/courseware/

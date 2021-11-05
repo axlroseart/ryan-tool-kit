@@ -13,7 +13,7 @@ nav:
 ### 使用
 
 ```ts
-import { fileCanUpload } from '@frontend/dcc-utils';
+import { fileCanUpload } from '@ryan-drx/utils';
 
 fileCanUpload(205, 'doc'); // 超出默认大小200M，函数会抛出错误，后续代码不会执行
 fileCanUpload(205, 'doc', 250);  // 通过大小检测，继续执行后续代码
