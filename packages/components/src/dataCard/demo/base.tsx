@@ -4,8 +4,8 @@ import '../style';
 // import 'tailwindcss/tailwind.css';
 
 
-const allienceCountImg = require('./platform.png');
-const allienceCountOpercyImg = require('./platform-opercy.png');
+const allienceCountImg = require('./all-income.png');
+const allienceCountOpercyImg = require('./all-income-opercy.png');
 
 export default (props) => (
   <DataCard

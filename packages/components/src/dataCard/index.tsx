@@ -5,11 +5,11 @@ export interface PlatformIncomeProps {
   title?:string;
   subTitle?:string;
   subTitle2?:string;
-  totalCount?:string;
-  subValue?:string;
-  subValue2?:string;
+  totalCount?:number;
+  subValue?:number;
+  subValue2?:number;
+  subValue3?:number;
   icons?:string[];
-  pageParam:any;
   className?:string;
 }
 
@@ -23,12 +23,12 @@ const DataCard:React.FC<PlatformIncomeProps> = (props) => {
 
         <div className="flex items-center">
           <img
-            className="group-hover:hidden"
+            className="group-hover:hidden borderRadius"
             width={42}
             src={icons![0]}
           />
           <img
-            className="hidden group-hover:inline-block"
+            className="hidden group-hover:inline-block borderRadius"
             width={42}
             src={icons![1]}
           />
