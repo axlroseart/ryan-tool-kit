@@ -5,8 +5,8 @@
   "scripts": {
     "postinstall": "npm run bootstrap",
     "start": "dumi dev",
-    "build-doc": "dumi build",
-    "compile": "father-build",
+    "build:doc": "dumi build",
+    "build": "father-build",
     "production": "node ./bin/server.js",
     "lint": "eslint packages/**/*.{ts,tsx} --fix && stylelint packages/**/*.less --fix",
     "test": "umi-test --coverage",
